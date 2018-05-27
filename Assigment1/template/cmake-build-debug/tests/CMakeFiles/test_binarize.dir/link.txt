@@ -1,0 +1,1 @@
+/usr/bin/cc  -std=c99 -Wall -Wextra -Wshadow -g -O0 -g   CMakeFiles/test_binarize.dir/test_binarize.c.o CMakeFiles/test_binarize.dir/__/src/binarize.c.o  -o test_binarize -lcheck_pic -lrt -lm -lsubunit -lpthread 
