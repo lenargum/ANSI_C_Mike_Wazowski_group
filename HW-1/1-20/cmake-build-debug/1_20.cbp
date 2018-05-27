@@ -78,7 +78,10 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/igor/ANCI/ANSI_C_Mike_Wazowski_group/HW-1/1-20/main.c">
+		<Unit filename="/home/igor/ANCI/ANSI_C_Mike_Wazowski_group/HW-1/1-20/src/detab.c">
+			<Option target="1_20"/>
+		</Unit>
+		<Unit filename="/home/igor/ANCI/ANSI_C_Mike_Wazowski_group/HW-1/1-20/src/detab.h">
 			<Option target="1_20"/>
 		</Unit>
 		<Unit filename="/home/igor/ANCI/ANSI_C_Mike_Wazowski_group/HW-1/1-20/CMakeLists.txt">

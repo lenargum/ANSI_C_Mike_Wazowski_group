@@ -57,38 +57,38 @@ include CMakeFiles/1_20.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/1_20.dir/flags.make
 
-CMakeFiles/1_20.dir/main.c.o: CMakeFiles/1_20.dir/flags.make
-CMakeFiles/1_20.dir/main.c.o: ../main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/igor/ANCI/ANSI_C_Mike_Wazowski_group/HW-1/1-20/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/1_20.dir/main.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/1_20.dir/main.c.o   -c /home/igor/ANCI/ANSI_C_Mike_Wazowski_group/HW-1/1-20/main.c
+CMakeFiles/1_20.dir/src/detab.c.o: CMakeFiles/1_20.dir/flags.make
+CMakeFiles/1_20.dir/src/detab.c.o: ../src/detab.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/igor/ANCI/ANSI_C_Mike_Wazowski_group/HW-1/1-20/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/1_20.dir/src/detab.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/1_20.dir/src/detab.c.o   -c /home/igor/ANCI/ANSI_C_Mike_Wazowski_group/HW-1/1-20/src/detab.c
 
-CMakeFiles/1_20.dir/main.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/1_20.dir/main.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/igor/ANCI/ANSI_C_Mike_Wazowski_group/HW-1/1-20/main.c > CMakeFiles/1_20.dir/main.c.i
+CMakeFiles/1_20.dir/src/detab.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/1_20.dir/src/detab.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/igor/ANCI/ANSI_C_Mike_Wazowski_group/HW-1/1-20/src/detab.c > CMakeFiles/1_20.dir/src/detab.c.i
 
-CMakeFiles/1_20.dir/main.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/1_20.dir/main.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/igor/ANCI/ANSI_C_Mike_Wazowski_group/HW-1/1-20/main.c -o CMakeFiles/1_20.dir/main.c.s
+CMakeFiles/1_20.dir/src/detab.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/1_20.dir/src/detab.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/igor/ANCI/ANSI_C_Mike_Wazowski_group/HW-1/1-20/src/detab.c -o CMakeFiles/1_20.dir/src/detab.c.s
 
-CMakeFiles/1_20.dir/main.c.o.requires:
+CMakeFiles/1_20.dir/src/detab.c.o.requires:
 
-.PHONY : CMakeFiles/1_20.dir/main.c.o.requires
+.PHONY : CMakeFiles/1_20.dir/src/detab.c.o.requires
 
-CMakeFiles/1_20.dir/main.c.o.provides: CMakeFiles/1_20.dir/main.c.o.requires
-	$(MAKE) -f CMakeFiles/1_20.dir/build.make CMakeFiles/1_20.dir/main.c.o.provides.build
-.PHONY : CMakeFiles/1_20.dir/main.c.o.provides
+CMakeFiles/1_20.dir/src/detab.c.o.provides: CMakeFiles/1_20.dir/src/detab.c.o.requires
+	$(MAKE) -f CMakeFiles/1_20.dir/build.make CMakeFiles/1_20.dir/src/detab.c.o.provides.build
+.PHONY : CMakeFiles/1_20.dir/src/detab.c.o.provides
 
-CMakeFiles/1_20.dir/main.c.o.provides.build: CMakeFiles/1_20.dir/main.c.o
+CMakeFiles/1_20.dir/src/detab.c.o.provides.build: CMakeFiles/1_20.dir/src/detab.c.o
 
 
 # Object files for target 1_20
 1_20_OBJECTS = \
-"CMakeFiles/1_20.dir/main.c.o"
+"CMakeFiles/1_20.dir/src/detab.c.o"
 
 # External object files for target 1_20
 1_20_EXTERNAL_OBJECTS =
 
-1_20: CMakeFiles/1_20.dir/main.c.o
+1_20: CMakeFiles/1_20.dir/src/detab.c.o
 1_20: CMakeFiles/1_20.dir/build.make
 1_20: CMakeFiles/1_20.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/igor/ANCI/ANSI_C_Mike_Wazowski_group/HW-1/1-20/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable 1_20"
@@ -99,7 +99,7 @@ CMakeFiles/1_20.dir/build: 1_20
 
 .PHONY : CMakeFiles/1_20.dir/build
 
-CMakeFiles/1_20.dir/requires: CMakeFiles/1_20.dir/main.c.o.requires
+CMakeFiles/1_20.dir/requires: CMakeFiles/1_20.dir/src/detab.c.o.requires
 
 .PHONY : CMakeFiles/1_20.dir/requires
 

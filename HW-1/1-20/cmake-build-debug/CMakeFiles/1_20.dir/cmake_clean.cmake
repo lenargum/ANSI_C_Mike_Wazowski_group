@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/1_20.dir/main.c.o"
+  "CMakeFiles/1_20.dir/src/detab.c.o"
   "1_20.pdb"
   "1_20"
 )

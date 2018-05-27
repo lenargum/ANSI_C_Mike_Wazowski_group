@@ -123,32 +123,32 @@ depend:
 	$(MAKE) -f CMakeFiles/1_20.dir/build.make CMakeFiles/1_20.dir/build
 .PHONY : 1_20/fast
 
-main.o: main.c.o
+src/detab.o: src/detab.c.o
 
-.PHONY : main.o
+.PHONY : src/detab.o
 
 # target to build an object file
-main.c.o:
-	$(MAKE) -f CMakeFiles/1_20.dir/build.make CMakeFiles/1_20.dir/main.c.o
-.PHONY : main.c.o
+src/detab.c.o:
+	$(MAKE) -f CMakeFiles/1_20.dir/build.make CMakeFiles/1_20.dir/src/detab.c.o
+.PHONY : src/detab.c.o
 
-main.i: main.c.i
+src/detab.i: src/detab.c.i
 
-.PHONY : main.i
+.PHONY : src/detab.i
 
 # target to preprocess a source file
-main.c.i:
-	$(MAKE) -f CMakeFiles/1_20.dir/build.make CMakeFiles/1_20.dir/main.c.i
-.PHONY : main.c.i
+src/detab.c.i:
+	$(MAKE) -f CMakeFiles/1_20.dir/build.make CMakeFiles/1_20.dir/src/detab.c.i
+.PHONY : src/detab.c.i
 
-main.s: main.c.s
+src/detab.s: src/detab.c.s
 
-.PHONY : main.s
+.PHONY : src/detab.s
 
 # target to generate assembly for a file
-main.c.s:
-	$(MAKE) -f CMakeFiles/1_20.dir/build.make CMakeFiles/1_20.dir/main.c.s
-.PHONY : main.c.s
+src/detab.c.s:
+	$(MAKE) -f CMakeFiles/1_20.dir/build.make CMakeFiles/1_20.dir/src/detab.c.s
+.PHONY : src/detab.c.s
 
 # Help Target
 help:
@@ -159,9 +159,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... 1_20"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... src/detab.o"
+	@echo "... src/detab.i"
+	@echo "... src/detab.s"
 .PHONY : help
 
 
