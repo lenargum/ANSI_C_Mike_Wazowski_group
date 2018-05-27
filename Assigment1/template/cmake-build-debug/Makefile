@@ -39,19 +39,33 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
+<<<<<<< HEAD
 CMAKE_COMMAND = /cygdrive/c/Users/artem/.CLion2018.1/system/cygwin_cmake/bin/cmake.exe
 
 # The command to remove a file.
 RM = /cygdrive/c/Users/artem/.CLion2018.1/system/cygwin_cmake/bin/cmake.exe -E remove -f
+=======
+CMAKE_COMMAND = /home/igor/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/181.5087.36/bin/cmake/bin/cmake
+
+# The command to remove a file.
+RM = /home/igor/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/181.5087.36/bin/cmake/bin/cmake -E remove -f
+>>>>>>> 7f265a1eed31d833b6c943586c08f5fd24e4448b
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
+<<<<<<< HEAD
 CMAKE_SOURCE_DIR = /cygdrive/c/Users/artem/Documents/GitHub/ANSI_C_Mike_Wazowski_group/Assigment1/template
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /cygdrive/c/Users/artem/Documents/GitHub/ANSI_C_Mike_Wazowski_group/Assigment1/template/cmake-build-debug
+=======
+CMAKE_SOURCE_DIR = /home/igor/ANCI/ANSI_C_Mike_Wazowski_group/Assigment1/template
+
+# The top-level build directory on which CMake was run.
+CMAKE_BINARY_DIR = /home/igor/ANCI/ANSI_C_Mike_Wazowski_group/Assigment1/template/cmake-build-debug
+>>>>>>> 7f265a1eed31d833b6c943586c08f5fd24e4448b
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,7 +73,11 @@ CMAKE_BINARY_DIR = /cygdrive/c/Users/artem/Documents/GitHub/ANSI_C_Mike_Wazowski
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+<<<<<<< HEAD
 	/cygdrive/c/Users/artem/.CLion2018.1/system/cygwin_cmake/bin/cmake.exe -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+=======
+	/home/igor/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/181.5087.36/bin/cmake/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+>>>>>>> 7f265a1eed31d833b6c943586c08f5fd24e4448b
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +88,11 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+<<<<<<< HEAD
 	/cygdrive/c/Users/artem/.CLion2018.1/system/cygwin_cmake/bin/cmake.exe -E echo No\ interactive\ CMake\ dialog\ available.
+=======
+	/home/igor/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/181.5087.36/bin/cmake/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+>>>>>>> 7f265a1eed31d833b6c943586c08f5fd24e4448b
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -81,7 +103,11 @@ edit_cache/fast: edit_cache
 # Special rule for the target test
 test:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+<<<<<<< HEAD
 	/cygdrive/c/Users/artem/.CLion2018.1/system/cygwin_cmake/bin/ctest.exe --force-new-ctest-process $(ARGS)
+=======
+	/home/igor/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/181.5087.36/bin/cmake/bin/ctest --force-new-ctest-process $(ARGS)
+>>>>>>> 7f265a1eed31d833b6c943586c08f5fd24e4448b
 .PHONY : test
 
 # Special rule for the target test
@@ -91,9 +117,15 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
+<<<<<<< HEAD
 	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/c/Users/artem/Documents/GitHub/ANSI_C_Mike_Wazowski_group/Assigment1/template/cmake-build-debug/CMakeFiles /cygdrive/c/Users/artem/Documents/GitHub/ANSI_C_Mike_Wazowski_group/Assigment1/template/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
 	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/c/Users/artem/Documents/GitHub/ANSI_C_Mike_Wazowski_group/Assigment1/template/cmake-build-debug/CMakeFiles 0
+=======
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/igor/ANCI/ANSI_C_Mike_Wazowski_group/Assigment1/template/cmake-build-debug/CMakeFiles /home/igor/ANCI/ANSI_C_Mike_Wazowski_group/Assigment1/template/cmake-build-debug/CMakeFiles/progress.marks
+	$(MAKE) -f CMakeFiles/Makefile2 all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/igor/ANCI/ANSI_C_Mike_Wazowski_group/Assigment1/template/cmake-build-debug/CMakeFiles 0
+>>>>>>> 7f265a1eed31d833b6c943586c08f5fd24e4448b
 .PHONY : all
 
 # The main clean target

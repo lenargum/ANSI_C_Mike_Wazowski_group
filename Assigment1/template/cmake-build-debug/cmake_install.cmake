@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # Install script for directory: /cygdrive/c/Users/artem/Documents/GitHub/ANSI_C_Mike_Wazowski_group/Assigment1/template
+=======
+# Install script for directory: /home/igor/ANCI/ANSI_C_Mike_Wazowski_group/Assigment1/template
+>>>>>>> 7f265a1eed31d833b6c943586c08f5fd24e4448b
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -27,6 +31,14 @@ if(NOT CMAKE_INSTALL_COMPONENT)
   endif()
 endif()
 
+<<<<<<< HEAD
+=======
+# Install shared libraries without execute permission?
+if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
+  set(CMAKE_INSTALL_SO_NO_EXE "1")
+endif()
+
+>>>>>>> 7f265a1eed31d833b6c943586c08f5fd24e4448b
 # Is this installation the result of a crosscompile?
 if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
@@ -34,7 +46,11 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
+<<<<<<< HEAD
   include("/cygdrive/c/Users/artem/Documents/GitHub/ANSI_C_Mike_Wazowski_group/Assigment1/template/cmake-build-debug/tests/cmake_install.cmake")
+=======
+  include("/home/igor/ANCI/ANSI_C_Mike_Wazowski_group/Assigment1/template/cmake-build-debug/tests/cmake_install.cmake")
+>>>>>>> 7f265a1eed31d833b6c943586c08f5fd24e4448b
 
 endif()
 
@@ -46,5 +62,9 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
+<<<<<<< HEAD
 file(WRITE "/cygdrive/c/Users/artem/Documents/GitHub/ANSI_C_Mike_Wazowski_group/Assigment1/template/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+=======
+file(WRITE "/home/igor/ANCI/ANSI_C_Mike_Wazowski_group/Assigment1/template/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+>>>>>>> 7f265a1eed31d833b6c943586c08f5fd24e4448b
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
