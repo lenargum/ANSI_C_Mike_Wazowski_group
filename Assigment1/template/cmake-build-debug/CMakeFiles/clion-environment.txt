@@ -1,7 +1,0 @@
-<<<<<<< HEAD
-ToolSet: 2.10.0@C:\cygwin64
-=======
->>>>>>> 7f265a1eed31d833b6c943586c08f5fd24e4448b
-Options: 
-
-Options:

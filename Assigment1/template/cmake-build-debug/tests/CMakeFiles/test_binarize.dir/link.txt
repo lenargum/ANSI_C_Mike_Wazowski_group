@@ -1,5 +1,0 @@
-<<<<<<< HEAD
-/usr/bin/cc  -std=c99 -Wall -Wextra -Wshadow -g -O0 -g  -Wl,--enable-auto-import CMakeFiles/test_binarize.dir/test_binarize.c.o CMakeFiles/test_binarize.dir/__/src/binarize.c.o  -o test_binarize.exe -Wl,--out-implib,libtest_binarize.dll.a -Wl,--major-image-version,0,--minor-image-version,0 -lcheck 
-=======
-/usr/bin/cc  -std=c99 -Wall -Wextra -Wshadow -g -O0 -g   CMakeFiles/test_binarize.dir/test_binarize.c.o CMakeFiles/test_binarize.dir/__/src/binarize.c.o  -o test_binarize -lcheck_pic -lrt -lm -lsubunit -lpthread 
->>>>>>> 7f265a1eed31d833b6c943586c08f5fd24e4448b
