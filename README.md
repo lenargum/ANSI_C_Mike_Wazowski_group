@@ -1,1 +1,1 @@
-# ANSI_C_Oscar_group
+# ANSI C course, group Mike
