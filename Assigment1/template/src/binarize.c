@@ -1,7 +1,8 @@
 //
 // Created by cubazis on 24.05.18.
 //
-
+#include <stdlib.h>
+#include <memory.h>
 #include "binarize.h"
 
 void printBitSet(char b[])
@@ -74,14 +75,54 @@ void two_complement(char *b)
 	/** YOUR CODE HERE */
 }
 
+unsigned int calculateCountOfBits(long long number)
+{
+    unsigned int countBit = 16;
+    unsigned long long maxCapacity = 65536;
+    while (maxCapacity < number)
+    {
+        countBit += 1;
+        maxCapacity *= 2;
+    }
+    unsigned int i = 1;
+    while(i < countBit) i *= 2;
+    return i;
+}
+
+char* reverse(char* reverseString)
+{
+    char * newString = malloc(strlen(reverseString));
+    strcpy(newString, reverseString);
+    int n = (int) strlen(reverseString) - 1;
+    int i = 0;
+    while(i <= n)
+    {
+        char temp = newString[i];
+        newString[i] = newString[n];
+        newString[n] = temp;
+        i++;
+        n--;
+    }
+    return newString;
+}
+
 char* binarize_u(unsigned long long x)
 {
-
+    unsigned int countBit = calculateCountOfBits(x);
+    char * bReverseNumber = (char*) malloc(sizeof(char) * countBit);
+    int i = 0;
+    while (i < countBit) {
+        bReverseNumber[i] = (x % 2) + '0';
+        i++;
+        x = x / 2;
+    }
+    return reverse(bReverseNumber);
 }
 
 char* binarize_s(signed long long y)
 {
-	/** YOUR CODE HERE */
+    unsigned int countBit = calculateCountOfBits(y);
+    /** YOUR CODE HERE */
 
 }
 

@@ -34,19 +34,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/igor/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/181.5087.36/bin/cmake/bin/cmake
+CMAKE_COMMAND = /cygdrive/c/Users/artem/.CLion2018.1/system/cygwin_cmake/bin/cmake.exe
 
 # The command to remove a file.
-RM = /home/igor/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/181.5087.36/bin/cmake/bin/cmake -E remove -f
+RM = /cygdrive/c/Users/artem/.CLion2018.1/system/cygwin_cmake/bin/cmake.exe -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/igor/ANCI/ANSI_C_Mike_Wazowski_group/Assigment1/template
+CMAKE_SOURCE_DIR = /cygdrive/c/Users/artem/Documents/GitHub/ANSI_C_Mike_Wazowski_group/Assigment1/template
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/igor/ANCI/ANSI_C_Mike_Wazowski_group/Assigment1/template/cmake-build-debug
+CMAKE_BINARY_DIR = /cygdrive/c/Users/artem/Documents/GitHub/ANSI_C_Mike_Wazowski_group/Assigment1/template/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include tests/CMakeFiles/test_task.dir/depend.make
@@ -59,16 +59,16 @@ include tests/CMakeFiles/test_task.dir/flags.make
 
 tests/CMakeFiles/test_task.dir/test_task.c.o: tests/CMakeFiles/test_task.dir/flags.make
 tests/CMakeFiles/test_task.dir/test_task.c.o: ../tests/test_task.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/igor/ANCI/ANSI_C_Mike_Wazowski_group/Assigment1/template/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object tests/CMakeFiles/test_task.dir/test_task.c.o"
-	cd /home/igor/ANCI/ANSI_C_Mike_Wazowski_group/Assigment1/template/cmake-build-debug/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/test_task.dir/test_task.c.o   -c /home/igor/ANCI/ANSI_C_Mike_Wazowski_group/Assigment1/template/tests/test_task.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/artem/Documents/GitHub/ANSI_C_Mike_Wazowski_group/Assigment1/template/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object tests/CMakeFiles/test_task.dir/test_task.c.o"
+	cd /cygdrive/c/Users/artem/Documents/GitHub/ANSI_C_Mike_Wazowski_group/Assigment1/template/cmake-build-debug/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/test_task.dir/test_task.c.o   -c /cygdrive/c/Users/artem/Documents/GitHub/ANSI_C_Mike_Wazowski_group/Assigment1/template/tests/test_task.c
 
 tests/CMakeFiles/test_task.dir/test_task.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/test_task.dir/test_task.c.i"
-	cd /home/igor/ANCI/ANSI_C_Mike_Wazowski_group/Assigment1/template/cmake-build-debug/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/igor/ANCI/ANSI_C_Mike_Wazowski_group/Assigment1/template/tests/test_task.c > CMakeFiles/test_task.dir/test_task.c.i
+	cd /cygdrive/c/Users/artem/Documents/GitHub/ANSI_C_Mike_Wazowski_group/Assigment1/template/cmake-build-debug/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /cygdrive/c/Users/artem/Documents/GitHub/ANSI_C_Mike_Wazowski_group/Assigment1/template/tests/test_task.c > CMakeFiles/test_task.dir/test_task.c.i
 
 tests/CMakeFiles/test_task.dir/test_task.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/test_task.dir/test_task.c.s"
-	cd /home/igor/ANCI/ANSI_C_Mike_Wazowski_group/Assigment1/template/cmake-build-debug/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/igor/ANCI/ANSI_C_Mike_Wazowski_group/Assigment1/template/tests/test_task.c -o CMakeFiles/test_task.dir/test_task.c.s
+	cd /cygdrive/c/Users/artem/Documents/GitHub/ANSI_C_Mike_Wazowski_group/Assigment1/template/cmake-build-debug/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /cygdrive/c/Users/artem/Documents/GitHub/ANSI_C_Mike_Wazowski_group/Assigment1/template/tests/test_task.c -o CMakeFiles/test_task.dir/test_task.c.s
 
 tests/CMakeFiles/test_task.dir/test_task.c.o.requires:
 
@@ -83,16 +83,16 @@ tests/CMakeFiles/test_task.dir/test_task.c.o.provides.build: tests/CMakeFiles/te
 
 tests/CMakeFiles/test_task.dir/__/src/task.c.o: tests/CMakeFiles/test_task.dir/flags.make
 tests/CMakeFiles/test_task.dir/__/src/task.c.o: ../src/task.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/igor/ANCI/ANSI_C_Mike_Wazowski_group/Assigment1/template/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object tests/CMakeFiles/test_task.dir/__/src/task.c.o"
-	cd /home/igor/ANCI/ANSI_C_Mike_Wazowski_group/Assigment1/template/cmake-build-debug/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/test_task.dir/__/src/task.c.o   -c /home/igor/ANCI/ANSI_C_Mike_Wazowski_group/Assigment1/template/src/task.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/artem/Documents/GitHub/ANSI_C_Mike_Wazowski_group/Assigment1/template/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object tests/CMakeFiles/test_task.dir/__/src/task.c.o"
+	cd /cygdrive/c/Users/artem/Documents/GitHub/ANSI_C_Mike_Wazowski_group/Assigment1/template/cmake-build-debug/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/test_task.dir/__/src/task.c.o   -c /cygdrive/c/Users/artem/Documents/GitHub/ANSI_C_Mike_Wazowski_group/Assigment1/template/src/task.c
 
 tests/CMakeFiles/test_task.dir/__/src/task.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/test_task.dir/__/src/task.c.i"
-	cd /home/igor/ANCI/ANSI_C_Mike_Wazowski_group/Assigment1/template/cmake-build-debug/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/igor/ANCI/ANSI_C_Mike_Wazowski_group/Assigment1/template/src/task.c > CMakeFiles/test_task.dir/__/src/task.c.i
+	cd /cygdrive/c/Users/artem/Documents/GitHub/ANSI_C_Mike_Wazowski_group/Assigment1/template/cmake-build-debug/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /cygdrive/c/Users/artem/Documents/GitHub/ANSI_C_Mike_Wazowski_group/Assigment1/template/src/task.c > CMakeFiles/test_task.dir/__/src/task.c.i
 
 tests/CMakeFiles/test_task.dir/__/src/task.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/test_task.dir/__/src/task.c.s"
-	cd /home/igor/ANCI/ANSI_C_Mike_Wazowski_group/Assigment1/template/cmake-build-debug/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/igor/ANCI/ANSI_C_Mike_Wazowski_group/Assigment1/template/src/task.c -o CMakeFiles/test_task.dir/__/src/task.c.s
+	cd /cygdrive/c/Users/artem/Documents/GitHub/ANSI_C_Mike_Wazowski_group/Assigment1/template/cmake-build-debug/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /cygdrive/c/Users/artem/Documents/GitHub/ANSI_C_Mike_Wazowski_group/Assigment1/template/src/task.c -o CMakeFiles/test_task.dir/__/src/task.c.s
 
 tests/CMakeFiles/test_task.dir/__/src/task.c.o.requires:
 
@@ -113,15 +113,15 @@ test_task_OBJECTS = \
 # External object files for target test_task
 test_task_EXTERNAL_OBJECTS =
 
-tests/test_task: tests/CMakeFiles/test_task.dir/test_task.c.o
-tests/test_task: tests/CMakeFiles/test_task.dir/__/src/task.c.o
-tests/test_task: tests/CMakeFiles/test_task.dir/build.make
-tests/test_task: tests/CMakeFiles/test_task.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/igor/ANCI/ANSI_C_Mike_Wazowski_group/Assigment1/template/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable test_task"
-	cd /home/igor/ANCI/ANSI_C_Mike_Wazowski_group/Assigment1/template/cmake-build-debug/tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test_task.dir/link.txt --verbose=$(VERBOSE)
+tests/test_task.exe: tests/CMakeFiles/test_task.dir/test_task.c.o
+tests/test_task.exe: tests/CMakeFiles/test_task.dir/__/src/task.c.o
+tests/test_task.exe: tests/CMakeFiles/test_task.dir/build.make
+tests/test_task.exe: tests/CMakeFiles/test_task.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/cygdrive/c/Users/artem/Documents/GitHub/ANSI_C_Mike_Wazowski_group/Assigment1/template/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable test_task.exe"
+	cd /cygdrive/c/Users/artem/Documents/GitHub/ANSI_C_Mike_Wazowski_group/Assigment1/template/cmake-build-debug/tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test_task.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-tests/CMakeFiles/test_task.dir/build: tests/test_task
+tests/CMakeFiles/test_task.dir/build: tests/test_task.exe
 
 .PHONY : tests/CMakeFiles/test_task.dir/build
 
@@ -131,10 +131,10 @@ tests/CMakeFiles/test_task.dir/requires: tests/CMakeFiles/test_task.dir/__/src/t
 .PHONY : tests/CMakeFiles/test_task.dir/requires
 
 tests/CMakeFiles/test_task.dir/clean:
-	cd /home/igor/ANCI/ANSI_C_Mike_Wazowski_group/Assigment1/template/cmake-build-debug/tests && $(CMAKE_COMMAND) -P CMakeFiles/test_task.dir/cmake_clean.cmake
+	cd /cygdrive/c/Users/artem/Documents/GitHub/ANSI_C_Mike_Wazowski_group/Assigment1/template/cmake-build-debug/tests && $(CMAKE_COMMAND) -P CMakeFiles/test_task.dir/cmake_clean.cmake
 .PHONY : tests/CMakeFiles/test_task.dir/clean
 
 tests/CMakeFiles/test_task.dir/depend:
-	cd /home/igor/ANCI/ANSI_C_Mike_Wazowski_group/Assigment1/template/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/igor/ANCI/ANSI_C_Mike_Wazowski_group/Assigment1/template /home/igor/ANCI/ANSI_C_Mike_Wazowski_group/Assigment1/template/tests /home/igor/ANCI/ANSI_C_Mike_Wazowski_group/Assigment1/template/cmake-build-debug /home/igor/ANCI/ANSI_C_Mike_Wazowski_group/Assigment1/template/cmake-build-debug/tests /home/igor/ANCI/ANSI_C_Mike_Wazowski_group/Assigment1/template/cmake-build-debug/tests/CMakeFiles/test_task.dir/DependInfo.cmake --color=$(COLOR)
+	cd /cygdrive/c/Users/artem/Documents/GitHub/ANSI_C_Mike_Wazowski_group/Assigment1/template/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /cygdrive/c/Users/artem/Documents/GitHub/ANSI_C_Mike_Wazowski_group/Assigment1/template /cygdrive/c/Users/artem/Documents/GitHub/ANSI_C_Mike_Wazowski_group/Assigment1/template/tests /cygdrive/c/Users/artem/Documents/GitHub/ANSI_C_Mike_Wazowski_group/Assigment1/template/cmake-build-debug /cygdrive/c/Users/artem/Documents/GitHub/ANSI_C_Mike_Wazowski_group/Assigment1/template/cmake-build-debug/tests /cygdrive/c/Users/artem/Documents/GitHub/ANSI_C_Mike_Wazowski_group/Assigment1/template/cmake-build-debug/tests/CMakeFiles/test_task.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : tests/CMakeFiles/test_task.dir/depend
 

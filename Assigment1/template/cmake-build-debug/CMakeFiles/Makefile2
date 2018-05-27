@@ -45,19 +45,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/igor/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/181.5087.36/bin/cmake/bin/cmake
+CMAKE_COMMAND = /cygdrive/c/Users/artem/.CLion2018.1/system/cygwin_cmake/bin/cmake.exe
 
 # The command to remove a file.
-RM = /home/igor/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/181.5087.36/bin/cmake/bin/cmake -E remove -f
+RM = /cygdrive/c/Users/artem/.CLion2018.1/system/cygwin_cmake/bin/cmake.exe -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/igor/ANCI/ANSI_C_Mike_Wazowski_group/Assigment1/template
+CMAKE_SOURCE_DIR = /cygdrive/c/Users/artem/Documents/GitHub/ANSI_C_Mike_Wazowski_group/Assigment1/template
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/igor/ANCI/ANSI_C_Mike_Wazowski_group/Assigment1/template/cmake-build-debug
+CMAKE_BINARY_DIR = /cygdrive/c/Users/artem/Documents/GitHub/ANSI_C_Mike_Wazowski_group/Assigment1/template/cmake-build-debug
 
 #=============================================================================
 # Directory level rules for directory tests
@@ -86,7 +86,7 @@ tests/preinstall:
 tests/CMakeFiles/test_binarize.dir/all:
 	$(MAKE) -f tests/CMakeFiles/test_binarize.dir/build.make tests/CMakeFiles/test_binarize.dir/depend
 	$(MAKE) -f tests/CMakeFiles/test_binarize.dir/build.make tests/CMakeFiles/test_binarize.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/igor/ANCI/ANSI_C_Mike_Wazowski_group/Assigment1/template/cmake-build-debug/CMakeFiles --progress-num=1,2,3 "Built target test_binarize"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/cygdrive/c/Users/artem/Documents/GitHub/ANSI_C_Mike_Wazowski_group/Assigment1/template/cmake-build-debug/CMakeFiles --progress-num=1,2,3 "Built target test_binarize"
 .PHONY : tests/CMakeFiles/test_binarize.dir/all
 
 # Include target in all.
@@ -96,9 +96,9 @@ all: tests/CMakeFiles/test_binarize.dir/all
 
 # Build rule for subdir invocation for target.
 tests/CMakeFiles/test_binarize.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/igor/ANCI/ANSI_C_Mike_Wazowski_group/Assigment1/template/cmake-build-debug/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/c/Users/artem/Documents/GitHub/ANSI_C_Mike_Wazowski_group/Assigment1/template/cmake-build-debug/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_binarize.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/igor/ANCI/ANSI_C_Mike_Wazowski_group/Assigment1/template/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/c/Users/artem/Documents/GitHub/ANSI_C_Mike_Wazowski_group/Assigment1/template/cmake-build-debug/CMakeFiles 0
 .PHONY : tests/CMakeFiles/test_binarize.dir/rule
 
 # Convenience name for target.
@@ -123,7 +123,7 @@ clean: tests/CMakeFiles/test_binarize.dir/clean
 tests/CMakeFiles/test_task.dir/all:
 	$(MAKE) -f tests/CMakeFiles/test_task.dir/build.make tests/CMakeFiles/test_task.dir/depend
 	$(MAKE) -f tests/CMakeFiles/test_task.dir/build.make tests/CMakeFiles/test_task.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/igor/ANCI/ANSI_C_Mike_Wazowski_group/Assigment1/template/cmake-build-debug/CMakeFiles --progress-num=4,5,6 "Built target test_task"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/cygdrive/c/Users/artem/Documents/GitHub/ANSI_C_Mike_Wazowski_group/Assigment1/template/cmake-build-debug/CMakeFiles --progress-num=4,5,6 "Built target test_task"
 .PHONY : tests/CMakeFiles/test_task.dir/all
 
 # Include target in all.
@@ -133,9 +133,9 @@ all: tests/CMakeFiles/test_task.dir/all
 
 # Build rule for subdir invocation for target.
 tests/CMakeFiles/test_task.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/igor/ANCI/ANSI_C_Mike_Wazowski_group/Assigment1/template/cmake-build-debug/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/c/Users/artem/Documents/GitHub/ANSI_C_Mike_Wazowski_group/Assigment1/template/cmake-build-debug/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_task.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/igor/ANCI/ANSI_C_Mike_Wazowski_group/Assigment1/template/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/c/Users/artem/Documents/GitHub/ANSI_C_Mike_Wazowski_group/Assigment1/template/cmake-build-debug/CMakeFiles 0
 .PHONY : tests/CMakeFiles/test_task.dir/rule
 
 # Convenience name for target.
