@@ -4,28 +4,28 @@
 #include <check.h>
 #include "binarize.h"
 
-int COMPARATOR(char* c1, char* c2)
-{
-	if(strlen(c1) != strlen(c2))
-	{
-		return 0;
-	}
-	for (int i = 0; i < strlen(c1); i++)
-	{
-		if((c1)[i] != (c2)[i])
-		{
-			return 0;
-		}
-	}
-	return 1;
-}
+#ifndef COMPARATOR
+#define COMPARATOR(res, c1, c2) do                    \
+	{                                             \
+		char i = 0;                           \
+		for (;'\0' != (c1)[i];i++)            \
+		{                                     \
+			if((c1)[i] != (c2)[i])        \
+				{                     \
+                                        (res) = 0;    \
+				}                     \
+		}                                     \
+	} while(0)
+#endif
 
 START_TEST (test_bin_u)
 {
 	unsigned long x = 1608637542;
 	char* output = binarize_u(x);
 	char* pattern = "01011111111000011101110001100110";
-	ck_assert(COMPARATOR(output, pattern));
+	int k = 1;
+	COMPARATOR(k, output, pattern);
+	ck_assert(1 == k);
 	//printf("%s\n", output);
 }
 END_TEST
@@ -35,7 +35,9 @@ START_TEST (test_bin_s)
 	signed long x = -1608637542;
 	char* output = binarize_s(x);
 	char* pattern = "10100000000111100010001110011010";
-	ck_assert(COMPARATOR(output, pattern));
+	int k = 1;
+	COMPARATOR(k, output, pattern);
+	ck_assert(1 == k);
 	//printf("%s\n", output);
 }
 END_TEST

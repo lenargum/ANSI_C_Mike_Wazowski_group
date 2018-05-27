@@ -39,19 +39,33 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
+<<<<<<< HEAD
 CMAKE_COMMAND = /cygdrive/c/Users/artem/.CLion2018.1/system/cygwin_cmake/bin/cmake.exe
 
 # The command to remove a file.
 RM = /cygdrive/c/Users/artem/.CLion2018.1/system/cygwin_cmake/bin/cmake.exe -E remove -f
+=======
+CMAKE_COMMAND = /home/igor/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/181.5087.36/bin/cmake/bin/cmake
+
+# The command to remove a file.
+RM = /home/igor/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/181.5087.36/bin/cmake/bin/cmake -E remove -f
+>>>>>>> 7f265a1eed31d833b6c943586c08f5fd24e4448b
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
+<<<<<<< HEAD
 CMAKE_SOURCE_DIR = /cygdrive/c/Users/artem/Documents/GitHub/ANSI_C_Mike_Wazowski_group/Assigment1/template
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /cygdrive/c/Users/artem/Documents/GitHub/ANSI_C_Mike_Wazowski_group/Assigment1/template/cmake-build-debug
+=======
+CMAKE_SOURCE_DIR = /home/igor/ANCI/ANSI_C_Mike_Wazowski_group/Assigment1/template
+
+# The top-level build directory on which CMake was run.
+CMAKE_BINARY_DIR = /home/igor/ANCI/ANSI_C_Mike_Wazowski_group/Assigment1/template/cmake-build-debug
+>>>>>>> 7f265a1eed31d833b6c943586c08f5fd24e4448b
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,7 +73,11 @@ CMAKE_BINARY_DIR = /cygdrive/c/Users/artem/Documents/GitHub/ANSI_C_Mike_Wazowski
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+<<<<<<< HEAD
 	/cygdrive/c/Users/artem/.CLion2018.1/system/cygwin_cmake/bin/cmake.exe -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+=======
+	/home/igor/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/181.5087.36/bin/cmake/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+>>>>>>> 7f265a1eed31d833b6c943586c08f5fd24e4448b
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +88,11 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+<<<<<<< HEAD
 	/cygdrive/c/Users/artem/.CLion2018.1/system/cygwin_cmake/bin/cmake.exe -E echo No\ interactive\ CMake\ dialog\ available.
+=======
+	/home/igor/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/181.5087.36/bin/cmake/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+>>>>>>> 7f265a1eed31d833b6c943586c08f5fd24e4448b
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -81,7 +103,11 @@ edit_cache/fast: edit_cache
 # Special rule for the target test
 test:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+<<<<<<< HEAD
 	/cygdrive/c/Users/artem/.CLion2018.1/system/cygwin_cmake/bin/ctest.exe --force-new-ctest-process $(ARGS)
+=======
+	/home/igor/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/181.5087.36/bin/cmake/bin/ctest --force-new-ctest-process $(ARGS)
+>>>>>>> 7f265a1eed31d833b6c943586c08f5fd24e4448b
 .PHONY : test
 
 # Special rule for the target test
@@ -91,14 +117,24 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
+<<<<<<< HEAD
 	cd /cygdrive/c/Users/artem/Documents/GitHub/ANSI_C_Mike_Wazowski_group/Assigment1/template/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/c/Users/artem/Documents/GitHub/ANSI_C_Mike_Wazowski_group/Assigment1/template/cmake-build-debug/CMakeFiles /cygdrive/c/Users/artem/Documents/GitHub/ANSI_C_Mike_Wazowski_group/Assigment1/template/cmake-build-debug/tests/CMakeFiles/progress.marks
 	cd /cygdrive/c/Users/artem/Documents/GitHub/ANSI_C_Mike_Wazowski_group/Assigment1/template/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 tests/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/c/Users/artem/Documents/GitHub/ANSI_C_Mike_Wazowski_group/Assigment1/template/cmake-build-debug/CMakeFiles 0
+=======
+	cd /home/igor/ANCI/ANSI_C_Mike_Wazowski_group/Assigment1/template/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/igor/ANCI/ANSI_C_Mike_Wazowski_group/Assigment1/template/cmake-build-debug/CMakeFiles /home/igor/ANCI/ANSI_C_Mike_Wazowski_group/Assigment1/template/cmake-build-debug/tests/CMakeFiles/progress.marks
+	cd /home/igor/ANCI/ANSI_C_Mike_Wazowski_group/Assigment1/template/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 tests/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/igor/ANCI/ANSI_C_Mike_Wazowski_group/Assigment1/template/cmake-build-debug/CMakeFiles 0
+>>>>>>> 7f265a1eed31d833b6c943586c08f5fd24e4448b
 .PHONY : all
 
 # The main clean target
 clean:
+<<<<<<< HEAD
 	cd /cygdrive/c/Users/artem/Documents/GitHub/ANSI_C_Mike_Wazowski_group/Assigment1/template/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 tests/clean
+=======
+	cd /home/igor/ANCI/ANSI_C_Mike_Wazowski_group/Assigment1/template/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 tests/clean
+>>>>>>> 7f265a1eed31d833b6c943586c08f5fd24e4448b
 .PHONY : clean
 
 # The main clean target
@@ -108,22 +144,38 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
+<<<<<<< HEAD
 	cd /cygdrive/c/Users/artem/Documents/GitHub/ANSI_C_Mike_Wazowski_group/Assigment1/template/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 tests/preinstall
+=======
+	cd /home/igor/ANCI/ANSI_C_Mike_Wazowski_group/Assigment1/template/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 tests/preinstall
+>>>>>>> 7f265a1eed31d833b6c943586c08f5fd24e4448b
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
+<<<<<<< HEAD
 	cd /cygdrive/c/Users/artem/Documents/GitHub/ANSI_C_Mike_Wazowski_group/Assigment1/template/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 tests/preinstall
+=======
+	cd /home/igor/ANCI/ANSI_C_Mike_Wazowski_group/Assigment1/template/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 tests/preinstall
+>>>>>>> 7f265a1eed31d833b6c943586c08f5fd24e4448b
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
+<<<<<<< HEAD
 	cd /cygdrive/c/Users/artem/Documents/GitHub/ANSI_C_Mike_Wazowski_group/Assigment1/template/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+=======
+	cd /home/igor/ANCI/ANSI_C_Mike_Wazowski_group/Assigment1/template/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+>>>>>>> 7f265a1eed31d833b6c943586c08f5fd24e4448b
 .PHONY : depend
 
 # Convenience name for target.
 tests/CMakeFiles/test_binarize.dir/rule:
+<<<<<<< HEAD
 	cd /cygdrive/c/Users/artem/Documents/GitHub/ANSI_C_Mike_Wazowski_group/Assigment1/template/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_binarize.dir/rule
+=======
+	cd /home/igor/ANCI/ANSI_C_Mike_Wazowski_group/Assigment1/template/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_binarize.dir/rule
+>>>>>>> 7f265a1eed31d833b6c943586c08f5fd24e4448b
 .PHONY : tests/CMakeFiles/test_binarize.dir/rule
 
 # Convenience name for target.
@@ -133,12 +185,20 @@ test_binarize: tests/CMakeFiles/test_binarize.dir/rule
 
 # fast build rule for target.
 test_binarize/fast:
+<<<<<<< HEAD
 	cd /cygdrive/c/Users/artem/Documents/GitHub/ANSI_C_Mike_Wazowski_group/Assigment1/template/cmake-build-debug && $(MAKE) -f tests/CMakeFiles/test_binarize.dir/build.make tests/CMakeFiles/test_binarize.dir/build
+=======
+	cd /home/igor/ANCI/ANSI_C_Mike_Wazowski_group/Assigment1/template/cmake-build-debug && $(MAKE) -f tests/CMakeFiles/test_binarize.dir/build.make tests/CMakeFiles/test_binarize.dir/build
+>>>>>>> 7f265a1eed31d833b6c943586c08f5fd24e4448b
 .PHONY : test_binarize/fast
 
 # Convenience name for target.
 tests/CMakeFiles/test_task.dir/rule:
+<<<<<<< HEAD
 	cd /cygdrive/c/Users/artem/Documents/GitHub/ANSI_C_Mike_Wazowski_group/Assigment1/template/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_task.dir/rule
+=======
+	cd /home/igor/ANCI/ANSI_C_Mike_Wazowski_group/Assigment1/template/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_task.dir/rule
+>>>>>>> 7f265a1eed31d833b6c943586c08f5fd24e4448b
 .PHONY : tests/CMakeFiles/test_task.dir/rule
 
 # Convenience name for target.
@@ -148,7 +208,11 @@ test_task: tests/CMakeFiles/test_task.dir/rule
 
 # fast build rule for target.
 test_task/fast:
+<<<<<<< HEAD
 	cd /cygdrive/c/Users/artem/Documents/GitHub/ANSI_C_Mike_Wazowski_group/Assigment1/template/cmake-build-debug && $(MAKE) -f tests/CMakeFiles/test_task.dir/build.make tests/CMakeFiles/test_task.dir/build
+=======
+	cd /home/igor/ANCI/ANSI_C_Mike_Wazowski_group/Assigment1/template/cmake-build-debug && $(MAKE) -f tests/CMakeFiles/test_task.dir/build.make tests/CMakeFiles/test_task.dir/build
+>>>>>>> 7f265a1eed31d833b6c943586c08f5fd24e4448b
 .PHONY : test_task/fast
 
 __/src/binarize.o: __/src/binarize.c.o
@@ -157,7 +221,11 @@ __/src/binarize.o: __/src/binarize.c.o
 
 # target to build an object file
 __/src/binarize.c.o:
+<<<<<<< HEAD
 	cd /cygdrive/c/Users/artem/Documents/GitHub/ANSI_C_Mike_Wazowski_group/Assigment1/template/cmake-build-debug && $(MAKE) -f tests/CMakeFiles/test_binarize.dir/build.make tests/CMakeFiles/test_binarize.dir/__/src/binarize.c.o
+=======
+	cd /home/igor/ANCI/ANSI_C_Mike_Wazowski_group/Assigment1/template/cmake-build-debug && $(MAKE) -f tests/CMakeFiles/test_binarize.dir/build.make tests/CMakeFiles/test_binarize.dir/__/src/binarize.c.o
+>>>>>>> 7f265a1eed31d833b6c943586c08f5fd24e4448b
 .PHONY : __/src/binarize.c.o
 
 __/src/binarize.i: __/src/binarize.c.i
@@ -166,7 +234,11 @@ __/src/binarize.i: __/src/binarize.c.i
 
 # target to preprocess a source file
 __/src/binarize.c.i:
+<<<<<<< HEAD
 	cd /cygdrive/c/Users/artem/Documents/GitHub/ANSI_C_Mike_Wazowski_group/Assigment1/template/cmake-build-debug && $(MAKE) -f tests/CMakeFiles/test_binarize.dir/build.make tests/CMakeFiles/test_binarize.dir/__/src/binarize.c.i
+=======
+	cd /home/igor/ANCI/ANSI_C_Mike_Wazowski_group/Assigment1/template/cmake-build-debug && $(MAKE) -f tests/CMakeFiles/test_binarize.dir/build.make tests/CMakeFiles/test_binarize.dir/__/src/binarize.c.i
+>>>>>>> 7f265a1eed31d833b6c943586c08f5fd24e4448b
 .PHONY : __/src/binarize.c.i
 
 __/src/binarize.s: __/src/binarize.c.s
@@ -175,7 +247,11 @@ __/src/binarize.s: __/src/binarize.c.s
 
 # target to generate assembly for a file
 __/src/binarize.c.s:
+<<<<<<< HEAD
 	cd /cygdrive/c/Users/artem/Documents/GitHub/ANSI_C_Mike_Wazowski_group/Assigment1/template/cmake-build-debug && $(MAKE) -f tests/CMakeFiles/test_binarize.dir/build.make tests/CMakeFiles/test_binarize.dir/__/src/binarize.c.s
+=======
+	cd /home/igor/ANCI/ANSI_C_Mike_Wazowski_group/Assigment1/template/cmake-build-debug && $(MAKE) -f tests/CMakeFiles/test_binarize.dir/build.make tests/CMakeFiles/test_binarize.dir/__/src/binarize.c.s
+>>>>>>> 7f265a1eed31d833b6c943586c08f5fd24e4448b
 .PHONY : __/src/binarize.c.s
 
 __/src/task.o: __/src/task.c.o
@@ -184,7 +260,11 @@ __/src/task.o: __/src/task.c.o
 
 # target to build an object file
 __/src/task.c.o:
+<<<<<<< HEAD
 	cd /cygdrive/c/Users/artem/Documents/GitHub/ANSI_C_Mike_Wazowski_group/Assigment1/template/cmake-build-debug && $(MAKE) -f tests/CMakeFiles/test_task.dir/build.make tests/CMakeFiles/test_task.dir/__/src/task.c.o
+=======
+	cd /home/igor/ANCI/ANSI_C_Mike_Wazowski_group/Assigment1/template/cmake-build-debug && $(MAKE) -f tests/CMakeFiles/test_task.dir/build.make tests/CMakeFiles/test_task.dir/__/src/task.c.o
+>>>>>>> 7f265a1eed31d833b6c943586c08f5fd24e4448b
 .PHONY : __/src/task.c.o
 
 __/src/task.i: __/src/task.c.i
@@ -193,7 +273,11 @@ __/src/task.i: __/src/task.c.i
 
 # target to preprocess a source file
 __/src/task.c.i:
+<<<<<<< HEAD
 	cd /cygdrive/c/Users/artem/Documents/GitHub/ANSI_C_Mike_Wazowski_group/Assigment1/template/cmake-build-debug && $(MAKE) -f tests/CMakeFiles/test_task.dir/build.make tests/CMakeFiles/test_task.dir/__/src/task.c.i
+=======
+	cd /home/igor/ANCI/ANSI_C_Mike_Wazowski_group/Assigment1/template/cmake-build-debug && $(MAKE) -f tests/CMakeFiles/test_task.dir/build.make tests/CMakeFiles/test_task.dir/__/src/task.c.i
+>>>>>>> 7f265a1eed31d833b6c943586c08f5fd24e4448b
 .PHONY : __/src/task.c.i
 
 __/src/task.s: __/src/task.c.s
@@ -202,7 +286,11 @@ __/src/task.s: __/src/task.c.s
 
 # target to generate assembly for a file
 __/src/task.c.s:
+<<<<<<< HEAD
 	cd /cygdrive/c/Users/artem/Documents/GitHub/ANSI_C_Mike_Wazowski_group/Assigment1/template/cmake-build-debug && $(MAKE) -f tests/CMakeFiles/test_task.dir/build.make tests/CMakeFiles/test_task.dir/__/src/task.c.s
+=======
+	cd /home/igor/ANCI/ANSI_C_Mike_Wazowski_group/Assigment1/template/cmake-build-debug && $(MAKE) -f tests/CMakeFiles/test_task.dir/build.make tests/CMakeFiles/test_task.dir/__/src/task.c.s
+>>>>>>> 7f265a1eed31d833b6c943586c08f5fd24e4448b
 .PHONY : __/src/task.c.s
 
 test_binarize.o: test_binarize.c.o
@@ -211,7 +299,11 @@ test_binarize.o: test_binarize.c.o
 
 # target to build an object file
 test_binarize.c.o:
+<<<<<<< HEAD
 	cd /cygdrive/c/Users/artem/Documents/GitHub/ANSI_C_Mike_Wazowski_group/Assigment1/template/cmake-build-debug && $(MAKE) -f tests/CMakeFiles/test_binarize.dir/build.make tests/CMakeFiles/test_binarize.dir/test_binarize.c.o
+=======
+	cd /home/igor/ANCI/ANSI_C_Mike_Wazowski_group/Assigment1/template/cmake-build-debug && $(MAKE) -f tests/CMakeFiles/test_binarize.dir/build.make tests/CMakeFiles/test_binarize.dir/test_binarize.c.o
+>>>>>>> 7f265a1eed31d833b6c943586c08f5fd24e4448b
 .PHONY : test_binarize.c.o
 
 test_binarize.i: test_binarize.c.i
@@ -220,7 +312,11 @@ test_binarize.i: test_binarize.c.i
 
 # target to preprocess a source file
 test_binarize.c.i:
+<<<<<<< HEAD
 	cd /cygdrive/c/Users/artem/Documents/GitHub/ANSI_C_Mike_Wazowski_group/Assigment1/template/cmake-build-debug && $(MAKE) -f tests/CMakeFiles/test_binarize.dir/build.make tests/CMakeFiles/test_binarize.dir/test_binarize.c.i
+=======
+	cd /home/igor/ANCI/ANSI_C_Mike_Wazowski_group/Assigment1/template/cmake-build-debug && $(MAKE) -f tests/CMakeFiles/test_binarize.dir/build.make tests/CMakeFiles/test_binarize.dir/test_binarize.c.i
+>>>>>>> 7f265a1eed31d833b6c943586c08f5fd24e4448b
 .PHONY : test_binarize.c.i
 
 test_binarize.s: test_binarize.c.s
@@ -229,7 +325,11 @@ test_binarize.s: test_binarize.c.s
 
 # target to generate assembly for a file
 test_binarize.c.s:
+<<<<<<< HEAD
 	cd /cygdrive/c/Users/artem/Documents/GitHub/ANSI_C_Mike_Wazowski_group/Assigment1/template/cmake-build-debug && $(MAKE) -f tests/CMakeFiles/test_binarize.dir/build.make tests/CMakeFiles/test_binarize.dir/test_binarize.c.s
+=======
+	cd /home/igor/ANCI/ANSI_C_Mike_Wazowski_group/Assigment1/template/cmake-build-debug && $(MAKE) -f tests/CMakeFiles/test_binarize.dir/build.make tests/CMakeFiles/test_binarize.dir/test_binarize.c.s
+>>>>>>> 7f265a1eed31d833b6c943586c08f5fd24e4448b
 .PHONY : test_binarize.c.s
 
 test_task.o: test_task.c.o
@@ -238,7 +338,11 @@ test_task.o: test_task.c.o
 
 # target to build an object file
 test_task.c.o:
+<<<<<<< HEAD
 	cd /cygdrive/c/Users/artem/Documents/GitHub/ANSI_C_Mike_Wazowski_group/Assigment1/template/cmake-build-debug && $(MAKE) -f tests/CMakeFiles/test_task.dir/build.make tests/CMakeFiles/test_task.dir/test_task.c.o
+=======
+	cd /home/igor/ANCI/ANSI_C_Mike_Wazowski_group/Assigment1/template/cmake-build-debug && $(MAKE) -f tests/CMakeFiles/test_task.dir/build.make tests/CMakeFiles/test_task.dir/test_task.c.o
+>>>>>>> 7f265a1eed31d833b6c943586c08f5fd24e4448b
 .PHONY : test_task.c.o
 
 test_task.i: test_task.c.i
@@ -247,7 +351,11 @@ test_task.i: test_task.c.i
 
 # target to preprocess a source file
 test_task.c.i:
+<<<<<<< HEAD
 	cd /cygdrive/c/Users/artem/Documents/GitHub/ANSI_C_Mike_Wazowski_group/Assigment1/template/cmake-build-debug && $(MAKE) -f tests/CMakeFiles/test_task.dir/build.make tests/CMakeFiles/test_task.dir/test_task.c.i
+=======
+	cd /home/igor/ANCI/ANSI_C_Mike_Wazowski_group/Assigment1/template/cmake-build-debug && $(MAKE) -f tests/CMakeFiles/test_task.dir/build.make tests/CMakeFiles/test_task.dir/test_task.c.i
+>>>>>>> 7f265a1eed31d833b6c943586c08f5fd24e4448b
 .PHONY : test_task.c.i
 
 test_task.s: test_task.c.s
@@ -256,7 +364,11 @@ test_task.s: test_task.c.s
 
 # target to generate assembly for a file
 test_task.c.s:
+<<<<<<< HEAD
 	cd /cygdrive/c/Users/artem/Documents/GitHub/ANSI_C_Mike_Wazowski_group/Assigment1/template/cmake-build-debug && $(MAKE) -f tests/CMakeFiles/test_task.dir/build.make tests/CMakeFiles/test_task.dir/test_task.c.s
+=======
+	cd /home/igor/ANCI/ANSI_C_Mike_Wazowski_group/Assigment1/template/cmake-build-debug && $(MAKE) -f tests/CMakeFiles/test_task.dir/build.make tests/CMakeFiles/test_task.dir/test_task.c.s
+>>>>>>> 7f265a1eed31d833b6c943586c08f5fd24e4448b
 .PHONY : test_task.c.s
 
 # Help Target
@@ -293,6 +405,10 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
+<<<<<<< HEAD
 	cd /cygdrive/c/Users/artem/Documents/GitHub/ANSI_C_Mike_Wazowski_group/Assigment1/template/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+=======
+	cd /home/igor/ANCI/ANSI_C_Mike_Wazowski_group/Assigment1/template/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+>>>>>>> 7f265a1eed31d833b6c943586c08f5fd24e4448b
 .PHONY : cmake_check_build_system
 

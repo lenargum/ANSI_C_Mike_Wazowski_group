@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # Install script for directory: /cygdrive/c/Users/artem/Documents/GitHub/ANSI_C_Mike_Wazowski_group/Assigment1/template/tests
+=======
+# Install script for directory: /home/igor/ANCI/ANSI_C_Mike_Wazowski_group/Assigment1/template/tests
+>>>>>>> 7f265a1eed31d833b6c943586c08f5fd24e4448b
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -27,6 +31,14 @@ if(NOT CMAKE_INSTALL_COMPONENT)
   endif()
 endif()
 
+<<<<<<< HEAD
+=======
+# Install shared libraries without execute permission?
+if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
+  set(CMAKE_INSTALL_SO_NO_EXE "1")
+endif()
+
+>>>>>>> 7f265a1eed31d833b6c943586c08f5fd24e4448b
 # Is this installation the result of a crosscompile?
 if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")

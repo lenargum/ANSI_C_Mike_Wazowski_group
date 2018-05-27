@@ -6,5 +6,9 @@ C_FLAGS =  -std=c99 -Wall -Wextra -Wshadow -g -O0 -g
 
 C_DEFINES = 
 
+<<<<<<< HEAD
 C_INCLUDES = -I/cygdrive/c/Users/artem/Documents/GitHub/ANSI_C_Mike_Wazowski_group/Assigment1/template/tests/. -I/cygdrive/c/Users/artem/Documents/GitHub/ANSI_C_Mike_Wazowski_group/Assigment1/template/tests/../src 
+=======
+C_INCLUDES = -I/home/igor/ANCI/ANSI_C_Mike_Wazowski_group/Assigment1/template/tests/. -I/home/igor/ANCI/ANSI_C_Mike_Wazowski_group/Assigment1/template/tests/../src 
+>>>>>>> 7f265a1eed31d833b6c943586c08f5fd24e4448b
 

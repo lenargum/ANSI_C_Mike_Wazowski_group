@@ -4,8 +4,13 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
+<<<<<<< HEAD
   "/cygdrive/c/Users/artem/Documents/GitHub/ANSI_C_Mike_Wazowski_group/Assigment1/template/src/binarize.c" "/cygdrive/c/Users/artem/Documents/GitHub/ANSI_C_Mike_Wazowski_group/Assigment1/template/cmake-build-debug/tests/CMakeFiles/test_binarize.dir/__/src/binarize.c.o"
   "/cygdrive/c/Users/artem/Documents/GitHub/ANSI_C_Mike_Wazowski_group/Assigment1/template/tests/test_binarize.c" "/cygdrive/c/Users/artem/Documents/GitHub/ANSI_C_Mike_Wazowski_group/Assigment1/template/cmake-build-debug/tests/CMakeFiles/test_binarize.dir/test_binarize.c.o"
+=======
+  "/home/igor/ANCI/ANSI_C_Mike_Wazowski_group/Assigment1/template/src/binarize.c" "/home/igor/ANCI/ANSI_C_Mike_Wazowski_group/Assigment1/template/cmake-build-debug/tests/CMakeFiles/test_binarize.dir/__/src/binarize.c.o"
+  "/home/igor/ANCI/ANSI_C_Mike_Wazowski_group/Assigment1/template/tests/test_binarize.c" "/home/igor/ANCI/ANSI_C_Mike_Wazowski_group/Assigment1/template/cmake-build-debug/tests/CMakeFiles/test_binarize.dir/test_binarize.c.o"
+>>>>>>> 7f265a1eed31d833b6c943586c08f5fd24e4448b
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

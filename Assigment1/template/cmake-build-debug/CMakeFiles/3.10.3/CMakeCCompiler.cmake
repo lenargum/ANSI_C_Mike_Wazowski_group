@@ -1,7 +1,11 @@
 set(CMAKE_C_COMPILER "/usr/bin/cc")
 set(CMAKE_C_COMPILER_ARG1 "")
 set(CMAKE_C_COMPILER_ID "GNU")
+<<<<<<< HEAD
 set(CMAKE_C_COMPILER_VERSION "6.4.0")
+=======
+set(CMAKE_C_COMPILER_VERSION "5.4.0")
+>>>>>>> 7f265a1eed31d833b6c943586c08f5fd24e4448b
 set(CMAKE_C_COMPILER_VERSION_INTERNAL "")
 set(CMAKE_C_COMPILER_WRAPPER "")
 set(CMAKE_C_STANDARD_COMPUTED_DEFAULT "11")
@@ -10,23 +14,39 @@ set(CMAKE_C90_COMPILE_FEATURES "c_std_90;c_function_prototypes")
 set(CMAKE_C99_COMPILE_FEATURES "c_std_99;c_restrict;c_variadic_macros")
 set(CMAKE_C11_COMPILE_FEATURES "c_std_11;c_static_assert")
 
+<<<<<<< HEAD
 set(CMAKE_C_PLATFORM_ID "Cygwin")
+=======
+set(CMAKE_C_PLATFORM_ID "Linux")
+>>>>>>> 7f265a1eed31d833b6c943586c08f5fd24e4448b
 set(CMAKE_C_SIMULATE_ID "")
 set(CMAKE_C_SIMULATE_VERSION "")
 
 
 
+<<<<<<< HEAD
 set(CMAKE_AR "/usr/bin/ar.exe")
 set(CMAKE_C_COMPILER_AR "/usr/bin/gcc-ar.exe")
 set(CMAKE_RANLIB "/usr/bin/ranlib.exe")
 set(CMAKE_C_COMPILER_RANLIB "/usr/bin/gcc-ranlib.exe")
 set(CMAKE_LINKER "/usr/bin/ld.exe")
+=======
+set(CMAKE_AR "/usr/bin/ar")
+set(CMAKE_C_COMPILER_AR "/usr/bin/gcc-ar-5")
+set(CMAKE_RANLIB "/usr/bin/ranlib")
+set(CMAKE_C_COMPILER_RANLIB "/usr/bin/gcc-ranlib-5")
+set(CMAKE_LINKER "/usr/bin/ld")
+>>>>>>> 7f265a1eed31d833b6c943586c08f5fd24e4448b
 set(CMAKE_COMPILER_IS_GNUCC 1)
 set(CMAKE_C_COMPILER_LOADED 1)
 set(CMAKE_C_COMPILER_WORKS TRUE)
 set(CMAKE_C_ABI_COMPILED TRUE)
 set(CMAKE_COMPILER_IS_MINGW )
+<<<<<<< HEAD
 set(CMAKE_COMPILER_IS_CYGWIN 1)
+=======
+set(CMAKE_COMPILER_IS_CYGWIN )
+>>>>>>> 7f265a1eed31d833b6c943586c08f5fd24e4448b
 if(CMAKE_COMPILER_IS_CYGWIN)
   set(CYGWIN 1)
   set(UNIX 1)
@@ -44,8 +64,13 @@ set(CMAKE_C_LINKER_PREFERENCE 10)
 
 # Save compiler ABI information.
 set(CMAKE_C_SIZEOF_DATA_PTR "8")
+<<<<<<< HEAD
 set(CMAKE_C_COMPILER_ABI "")
 set(CMAKE_C_LIBRARY_ARCHITECTURE "")
+=======
+set(CMAKE_C_COMPILER_ABI "ELF")
+set(CMAKE_C_LIBRARY_ARCHITECTURE "x86_64-linux-gnu")
+>>>>>>> 7f265a1eed31d833b6c943586c08f5fd24e4448b
 
 if(CMAKE_C_SIZEOF_DATA_PTR)
   set(CMAKE_SIZEOF_VOID_P "${CMAKE_C_SIZEOF_DATA_PTR}")
@@ -56,7 +81,11 @@ if(CMAKE_C_COMPILER_ABI)
 endif()
 
 if(CMAKE_C_LIBRARY_ARCHITECTURE)
+<<<<<<< HEAD
   set(CMAKE_LIBRARY_ARCHITECTURE "")
+=======
+  set(CMAKE_LIBRARY_ARCHITECTURE "x86_64-linux-gnu")
+>>>>>>> 7f265a1eed31d833b6c943586c08f5fd24e4448b
 endif()
 
 set(CMAKE_C_CL_SHOWINCLUDES_PREFIX "")
@@ -68,6 +97,11 @@ endif()
 
 
 
+<<<<<<< HEAD
 set(CMAKE_C_IMPLICIT_LINK_LIBRARIES "gcc_s;gcc;cygwin;advapi32;shell32;user32;kernel32;gcc_s;gcc")
 set(CMAKE_C_IMPLICIT_LINK_DIRECTORIES "/usr/lib/gcc/x86_64-pc-cygwin/6.4.0;/usr/x86_64-pc-cygwin/lib;/usr/lib;/lib")
+=======
+set(CMAKE_C_IMPLICIT_LINK_LIBRARIES "gcc;gcc_s;c;gcc;gcc_s")
+set(CMAKE_C_IMPLICIT_LINK_DIRECTORIES "/usr/lib/gcc/x86_64-linux-gnu/5;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib")
+>>>>>>> 7f265a1eed31d833b6c943586c08f5fd24e4448b
 set(CMAKE_C_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES "")
