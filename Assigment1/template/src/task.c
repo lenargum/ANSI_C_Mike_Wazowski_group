@@ -252,6 +252,18 @@ int any(const char s1[], const char s2[]) {
     return -1;
 }
 
+unsigned setbits(unsigned x, int p, int n, unsigned y){
+    unsigned x1 = x;
+    int to_move = p + 1 - n;
+    x1 = x1 & (~(~0 << to_move));
+    x = (x >> to_move) & ((~0 << n));
+
+    x = x | y & (~(~0 << n));
+
+    x = x << to_move | x1;
+    return x;
+}
+
 int binsearch(int x, int v[], int n) {
     int low, high, mid;
 
