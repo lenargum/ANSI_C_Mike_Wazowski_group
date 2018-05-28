@@ -262,4 +262,21 @@ double atofe(const char s[]){
     sscanf(s, "%lf", &d);
     return d;
 }
+
+int any(const char s1[], const char s2[]) {
+    char doesContain = 'f';//indicator for immediate exit if s1 contain any character from s2
+
+    for (int i = 0; i < strlen(s1) && doesContain == 'f'; i++) {
+        for (long int j = 0; j < strlen(s2) && doesContain == 'f'; j++) {
+            //comparison
+            if (s1[i] == s2[j]) {
+                doesContain = 't';
+            }
+        }
+        if (doesContain == 't') {
+            return i;
+        }
+    }
+    return -1;
+}
 /** GET FROM task.h */
