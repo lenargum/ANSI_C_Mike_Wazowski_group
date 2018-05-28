@@ -18,7 +18,3 @@ char *detab (const char input[]){
     }
     return res;
 }
-
-int main() {
-    return 0;
-}

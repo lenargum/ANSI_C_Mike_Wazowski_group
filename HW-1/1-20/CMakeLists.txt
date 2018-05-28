@@ -1,10 +1,11 @@
-cmake_minimum_required(VERSION 3.10)
-project(1_20 C)
+cmake_minimum_required(VERSION 3.8)
+project(1-20)
 
-set(CMAKE_C_STANDARD 11)
+set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -std=c99 -Wall -Wextra -Wshadow")
 
-include_directories(src)
+set(CMAKE_C_FLAGS_DEBUG "${CMAKE_C_FLAGS_DEBUG} -O0 -g")
 
-add_executable(1_20
-        src/detab.c
-        src/detab.h)
+set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_SOURCE_DIR}/CMakeModules/")
+
+enable_testing()
+add_subdirectory(tests)
