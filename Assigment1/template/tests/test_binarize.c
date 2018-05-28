@@ -26,8 +26,18 @@ START_TEST (test_bin_u)
 	int k = 1;
 	COMPARATOR(k, output, pattern);
 	ck_assert(1 == k);
-	//printf("%s\n", output);
 }
+END_TEST
+
+START_TEST (test_bin_u_border)
+    {
+        unsigned long x = 0;
+        char* output = binarize_u(x);
+        char* pattern = "0000000000000000";
+        int k = 1;
+        COMPARATOR(k, output, pattern);
+        ck_assert(1 == k);
+    }
 END_TEST
 
 START_TEST (test_bin_s)
@@ -38,8 +48,18 @@ START_TEST (test_bin_s)
 	int k = 1;
 	COMPARATOR(k, output, pattern);
 	ck_assert(1 == k);
-	//printf("%s\n", output);
 }
+END_TEST
+
+START_TEST (test_bin_s_border)
+    {
+        signed long x = -1;
+        char* output = binarize_s(x);
+        char* pattern = "1111111111111111";
+        int k = 1;
+        COMPARATOR(k, output, pattern);
+        ck_assert(1 == k);
+    }
 END_TEST
 
 Suite* str_suite (void) {
@@ -47,6 +67,8 @@ Suite* str_suite (void) {
 	TCase *tcase = tcase_create("case");
 	tcase_add_test(tcase, test_bin_u);
 	tcase_add_test(tcase, test_bin_s);
+	tcase_add_test(tcase, test_bin_u_border);
+	tcase_add_test(tcase, test_bin_s_border);
 	suite_add_tcase(suite, tcase);
 	return suite;
 }
