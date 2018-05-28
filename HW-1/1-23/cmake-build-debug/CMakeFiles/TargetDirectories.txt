@@ -1,3 +1,3 @@
-C:/Users/Lenar/IdeaProjects/ANSI_C_Mike_Wazowski_group/HW-1/1-23/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/Lenar/IdeaProjects/ANSI_C_Mike_Wazowski_group/HW-1/1-23/cmake-build-debug/CMakeFiles/1-23.dir
-C:/Users/Lenar/IdeaProjects/ANSI_C_Mike_Wazowski_group/HW-1/1-23/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/igor/ANCI/ANSI_C_Mike_Wazowski_group/HW-1/1-23/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/igor/ANCI/ANSI_C_Mike_Wazowski_group/HW-1/1-23/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/igor/ANCI/ANSI_C_Mike_Wazowski_group/HW-1/1-23/cmake-build-debug/CMakeFiles/1-23.dir

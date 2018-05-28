@@ -1,9 +1,7 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/1-23.dir/task.c.obj"
+  "CMakeFiles/1-23.dir/task.c.o"
   "1-23.pdb"
-  "1-23.exe"
-  "1-23.exe.manifest"
-  "lib1-23.dll.a"
+  "1-23"
 )
 
 # Per-language clean rules from dependency scanning.
