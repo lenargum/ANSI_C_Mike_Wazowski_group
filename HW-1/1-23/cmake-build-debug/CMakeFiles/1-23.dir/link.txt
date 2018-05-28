@@ -1,1 +1,0 @@
-/usr/bin/cc -g   CMakeFiles/1-23.dir/task.c.o  -o 1-23 

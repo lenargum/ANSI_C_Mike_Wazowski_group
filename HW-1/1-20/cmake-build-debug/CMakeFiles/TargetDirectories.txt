@@ -1,3 +1,0 @@
-/home/igor/ANCI/ANSI_C_Mike_Wazowski_group/HW-1/1-20/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/igor/ANCI/ANSI_C_Mike_Wazowski_group/HW-1/1-20/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/igor/ANCI/ANSI_C_Mike_Wazowski_group/HW-1/1-20/cmake-build-debug/CMakeFiles/1_20.dir
