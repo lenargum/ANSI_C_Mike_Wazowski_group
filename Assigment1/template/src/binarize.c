@@ -2,6 +2,8 @@
 // Created by cubazis on 24.05.18.
 //
 
+#include <malloc.h>
+#include <memory.h>
 #include "binarize.h"
 
 void printBitSet(char b[])
@@ -71,18 +73,60 @@ void one_complement(char *b)
 
 void two_complement(char *b)
 {
-	/** YOUR CODE HERE */
+    one_complement(b);
+    size_t n = strlen(b);
+    char* one = (char*) malloc(n);
+    one[n] = '\0';
+    one[n-1] = '1';
+    for(int i = (int) (n - 2); i >= 0; i--)
+    {
+        one[i] = '0';
+    }
+    bit_sum(b, one);
+    free(one);
+}
+
+unsigned int calculateCountOfBits(long long number)
+{
+    unsigned int countBit = 16;
+    unsigned long long maxCapacity = 65536;
+    while (maxCapacity < number)
+    {
+        countBit += 1;
+        maxCapacity *= 2;
+    }
+    unsigned int i = 1;
+    while(i < countBit) i *= 2;
+    return i;
 }
 
 char* binarize_u(unsigned long long x)
 {
-
+    unsigned int countBit = calculateCountOfBits(x);
+    char * bReverseNumber = (char*) malloc(sizeof(char) * countBit);
+    bReverseNumber[countBit] = '\0';
+    int i = countBit - 1;
+    while (i >= 0) {
+        bReverseNumber[i] = (char) ((x % 2) + '0');
+        i--;
+        x = x / 2;
+    }
+    return bReverseNumber;
 }
 
 char* binarize_s(signed long long y)
 {
-	/** YOUR CODE HERE */
-
+	if(y < 0)
+	{
+		y *= -1;
+		char * bNumber = binarize_u((unsigned long long int) y);
+        two_complement(bNumber);
+        return bNumber;
+	}
+	else
+	{
+		return binarize_u(y);
+	}
 }
 
 
