@@ -237,6 +237,68 @@ char *squeeze(const char s1[], const char s2[]) {
     return result;
 }
 
+int any(const char s1[], const char s2[]) {
+    char doesContain = 'f';//indicator for immediate exit if s1 contain any character from s2
+
+    for (int i = 0; i < strlen(s1) && doesContain == 'f'; i++) {
+        for (long int j = 0; j < strlen(s2) && doesContain == 'f'; j++) {
+            //comparison
+            if (s1[i] == s2[j]) {
+                doesContain = 't';
+            }
+        }
+        if (doesContain == 't') {
+            return i;
+        }
+    }
+    return -1;
+}
+
+char* itoa(int n) {
+    int i, sign;
+    sign = n;
+    char * s = malloc(sizeof(char));
+    i = 0;
+    do {
+        s = realloc(s, (i + 1) * sizeof(char));
+        s[i++] = abs(n % 10) + '0';
+    } while ( n /= 10 );
+    if (sign < 0)
+        s[i++] = '-';
+
+    s[i] = '\0';
+    int c, ind, j ;
+    for (ind = 0, j = strlen(s)-1; ind < j; ind ++, j--) {
+        c = s [ind] ;
+        s[ind] = s[j] ;
+        s[j] = c;
+    }
+    return s;
+}
+
+char* itob(int n, int b) {
+    int i, sign;
+    char digits[] = "0123456789ABCDEF";
+    char * s = malloc(sizeof(char));
+    sign = n;
+    i = 0;
+    do {
+        s = realloc(s, (i + 1) * sizeof(char));
+        s[i++] = digits[n % b];
+    } while ( n /= b );         /* исключить ее */
+    if (sign < 0)
+        s[i++] = '-';
+
+    s[i] = '\0';
+    int c, ind, j ;
+    for (ind = 0, j = strlen(s)-1; ind < j; ind ++, j--) {
+        c = s [ind] ;
+        s[ind] = s[j] ;
+        s[j] = c;
+    }
+    return s;
+}
+
 int strrindex(const char s[], const  char t[]){
     int index = -1;
     for (int i = 0; i < strlen(s); i++) {
@@ -261,22 +323,5 @@ double atofe(const char s[]){
     double d;
     sscanf(s, "%lf", &d);
     return d;
-}
-
-int any(const char s1[], const char s2[]) {
-    char doesContain = 'f';//indicator for immediate exit if s1 contain any character from s2
-
-    for (int i = 0; i < strlen(s1) && doesContain == 'f'; i++) {
-        for (long int j = 0; j < strlen(s2) && doesContain == 'f'; j++) {
-            //comparison
-            if (s1[i] == s2[j]) {
-                doesContain = 't';
-            }
-        }
-        if (doesContain == 't') {
-            return i;
-        }
-    }
-    return -1;
 }
 /** GET FROM task.h */
