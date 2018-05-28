@@ -90,34 +90,18 @@ unsigned int calculateCountOfBits(long long number)
     return i;
 }
 
-char* reverse(char* reverseString)
-{
-    char * newString = malloc(strlen(reverseString));
-    strcpy(newString, reverseString);
-    int n = (int) strlen(reverseString) - 1;
-    int i = 0;
-    while(i <= n)
-    {
-        char temp = newString[i];
-        newString[i] = newString[n];
-        newString[n] = temp;
-        i++;
-        n--;
-    }
-    return newString;
-}
-
 char* binarize_u(unsigned long long x)
 {
     unsigned int countBit = calculateCountOfBits(x);
     char * bReverseNumber = (char*) malloc(sizeof(char) * countBit);
-    int i = 0;
-    while (i < countBit) {
-        bReverseNumber[i] = (x % 2) + '0';
-        i++;
+    bReverseNumber[countBit] = '\0';
+    int i = countBit - 1;
+    while (i >= 0) {
+        bReverseNumber[i] = (char)(x % 2) + '0';
+        i--;
         x = x / 2;
     }
-    return reverse(bReverseNumber);
+    return bReverseNumber;
 }
 
 char* binarize_s(signed long long y)
