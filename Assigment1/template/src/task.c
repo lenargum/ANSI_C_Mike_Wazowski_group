@@ -176,4 +176,79 @@ int strrindex(const char s[], const  char t[]){
     }
     return index;
 }
+
+
+int htoi(const char hex[]) {
+    int integer = 0; //result
+    long long int stp16 = 1; //power of 16
+    int nonZeroDigitIndex = 2; //index of first non zero digit
+
+    //Searching for nonzero digit to save time
+    if (hex[0] == '0' && (hex[1] == 'x' || hex[1] == 'X')) {
+        while (hex[nonZeroDigitIndex] == '0' && nonZeroDigitIndex < strlen(hex)) {
+            nonZeroDigitIndex++;
+        }
+
+        //For every letter we use appropriate integer
+        for (long int i = strlen(hex) - 1; i >= nonZeroDigitIndex; i--) {
+            char cur = hex[i];
+            if ((cur >= 65) && (cur <= 90))
+                cur = (char) (cur + 32);
+
+            switch (cur) {
+                case 'f':
+                    integer += 15 * stp16;
+                    break;
+                case 'e':
+                    integer += 14 * stp16;
+                    break;
+                case 'd':
+                    integer += 13 * stp16;
+                    break;
+                case 'c':
+                    integer += 12 * stp16;
+                    break;
+                case 'b':
+                    integer += 11 * stp16;
+                    break;
+                case 'a':
+                    integer += 10 * stp16;
+                    break;
+                default:
+                    integer += (int) cur * stp16;
+                    break;
+            }
+            //Accumulation of power of 16
+            stp16 *= 16;
+        }
+        return integer;
+    } else {
+        //short handle for irrelevant strings
+        printf("Inputted number is not hexadecimal.");
+        return 0;
+    }
+}
+
+
+char *squeeze(const char s1[], const char s2[]) {
+    char* result = malloc(sizeof(s1)); //allocating memory for result string
+    char isContains; //is current letter contains in s2 ('f' for false and 't' for true)
+    long int lastS1Index = 0; //saving last index of result string
+
+    for (long int i = 0; i < strlen(s1); i++) {
+        isContains = 'f';
+        //comparison of letters from s1 and s2
+        for (long int j = 0; j < strlen(s2) && isContains=='f'; j++) {
+            if(s1[i]==s2[j]) {
+                isContains ='t';
+            }
+        }
+        //copying letter if s2 don't contain it
+        if(isContains=='f') {
+            result[lastS1Index] = s1[i];
+            lastS1Index++;
+        }
+    }
+    return result;
+}
 /** GET FROM task.h */
