@@ -274,6 +274,30 @@ int binsearch(int x, int v[], int n) {
     }
 }
 
+char* escape(const char from[]) {
+    char* result = malloc(sizeof(from)*2); //doubled size if string contains only tabulator or new line characters
+    long int lastIndex = 0;
+
+    for(int i = 0; i < strlen(from);i++) {
+        switch(from[i]) {
+            case 0x0A: //new line character
+                result[lastIndex] = '\\';
+                result[lastIndex+1] = 'n';
+                lastIndex+=2;
+                break;
+            case 0x09: //tabulator character
+                result[lastIndex] = '\\';
+                result[lastIndex+1] = 't';
+                lastIndex+=2;
+                break;
+            default: //other characters
+                result[lastIndex] = from[i];
+                lastIndex++;
+        }
+    }
+    return result;
+}
+
 char* expand(const char s1[]){
     int i, j;
     char t;
