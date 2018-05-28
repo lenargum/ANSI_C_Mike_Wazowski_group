@@ -163,21 +163,6 @@ char *flush(const char input[]) {
     return result;
 }
 
-int strrindex(const char s[], const  char t[]){
-    int index = -1;
-    for (int i = 0; i < strlen(s); i++) {
-        if (s[i] == t[0] && strlen(s) - i >= strlen(t) && index == -1) {
-            unsigned count = 0;
-            for (int j = 0; j < strlen(t); j++) {
-                if (s[i+j] == t[j]) count++;
-            }
-            if (count == strlen(t)) index = i;
-        }
-    }
-    return index;
-}
-
-
 int htoi(const char hex[]) {
     int integer = 0; //result
     long long int stp16 = 1; //power of 16
@@ -250,5 +235,31 @@ char *squeeze(const char s1[], const char s2[]) {
         }
     }
     return result;
+}
+
+int strrindex(const char s[], const  char t[]){
+    int index = -1;
+    for (int i = 0; i < strlen(s); i++) {
+        if (s[i] == t[0] && strlen(s) - i >= strlen(t) && index == -1) {
+            unsigned count = 0;
+            for (int j = 0; j < strlen(t); j++) {
+                if (s[i+j] == t[j]) count++;
+            }
+            if (count == strlen(t)) index = i;
+        }
+    }
+    return index;
+}
+
+double atofe(const char s[]){
+    char* str = malloc(sizeof(s));
+    int index = 0;
+    for (int i =0; i < strlen(s) && s[i] != 'e'; i++){
+        index = i;
+        str[i] = s[i];
+    }
+    double d;
+    sscanf(s, "%lf", &d);
+    return d;
 }
 /** GET FROM task.h */
