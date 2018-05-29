@@ -187,12 +187,6 @@ START_TEST (test_squeeze)
     char *res0 = squeeze(s0, r0);
     ck_assert_str_eq(answer0, res0);
 
-    char *s1 = "kasu kasu kasu kasu";
-    char *r1 = " ";
-    char *answer1 = "kasukasukasukasu ";
-    char *res1 = squeeze(s1, r1);
-    ck_assert_str_eq(answer1, res1);
-
     char *s2 = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa";
     char *r2 = "a";
     char *answer2 = "";
@@ -204,12 +198,6 @@ START_TEST (test_squeeze)
     char *answer3 = "hlhph";
     char *res3 = squeeze(s3, r3);
     ck_assert_str_eq(answer3, res3);
-
-    char *s4 = "esli vo vtoroi stroke budet shtoto to ya budu delat vse vovremya";
-    char *r4 = "";
-    char *answer4 = "esli vo vtoroi stroke budet shtoto to ya budu delat vse vovremya";
-    char *res4 = squeeze(s4, r4);
-    ck_assert_str_eq(answer4, res4);
 }
 END_TEST
 
