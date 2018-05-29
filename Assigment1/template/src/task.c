@@ -161,6 +161,7 @@ char *flush(const char input[]) {
                 break;
         }
     }
+    result[resultLastIndex]='\0';
     return result;
 }
 
@@ -232,6 +233,7 @@ char *squeeze(const char s1[], const char s2[]) {
             lastS1Index++;
         }
     }
+    result[lastS1Index]='\0';
     return result;
 }
 
@@ -304,6 +306,7 @@ char* escape(const char from[]) {
                 lastIndex++;
         }
     }
+    result[lastIndex] = '\0';
     return result;
 }
 
