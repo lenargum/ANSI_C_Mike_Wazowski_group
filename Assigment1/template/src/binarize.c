@@ -86,26 +86,21 @@ void two_complement(char *b)
     free(one);
 }
 
-unsigned int calculateCountOfBits(long long number)
-{
-    unsigned int countBit = 16;
-    unsigned long long maxCapacity = 65536;
-    while (maxCapacity < number)
-    {
-        countBit += 1;
-        maxCapacity *= 2;
-    }
-    unsigned int i = 1;
-    while(i < countBit) i *= 2;
-    return i;
-}
-
 char* binarize_u(unsigned long long x)
 {
-    unsigned int countBit = calculateCountOfBits(x);
+	unsigned int countBit = 16;
+	unsigned long long maxCapacity = 65536;
+	while (maxCapacity <= x)
+	{
+		countBit += 1;
+		maxCapacity *= 2;
+	}
+	int i = countBit;
+	countBit = 1;
+	while(countBit < i) countBit *= 2;
     char * bReverseNumber = (char*) malloc(sizeof(char) * countBit);
     bReverseNumber[countBit] = '\0';
-    int i = countBit - 1;
+    i = countBit - 1;
     while (i >= 0) {
         bReverseNumber[i] = (char) ((x % 2) + '0');
         i--;
@@ -119,13 +114,48 @@ char* binarize_s(signed long long y)
 	if(y < 0)
 	{
 		y *= -1;
-		char * bNumber = binarize_u((unsigned long long int) y);
-        two_complement(bNumber);
-        return bNumber;
+		unsigned int countBit = 16;
+		unsigned long long maxCapacity = 65535;
+		while (maxCapacity <= y)
+		{
+			countBit += 1;
+			maxCapacity *= 2;
+		}
+		int i = countBit;
+		countBit = 1;
+		while(countBit < i) countBit *= 2;
+		char * bReverseNumber = (char*) malloc(sizeof(char) * countBit);
+		bReverseNumber[countBit] = '\0';
+		i = countBit - 1;
+		while (i >= 0) {
+			bReverseNumber[i] = (char) ((y % 2) + '0');
+			i--;
+			y = y / 2;
+		}
+        two_complement(bReverseNumber);
+        return bReverseNumber;
 	}
 	else
 	{
-		return binarize_u(y);
+		unsigned int countBit = 16;
+		unsigned long long maxCapacity = 32768;
+		while (maxCapacity <= y)
+		{
+			countBit += 1;
+			maxCapacity *= 2;
+		}
+		int i = countBit;
+		countBit = 1;
+		while(countBit < i) countBit *= 2;
+		char * bReverseNumber = (char*) malloc(sizeof(char) * countBit);
+		bReverseNumber[countBit] = '\0';
+		i = countBit - 1;
+		while (i >= 0) {
+			bReverseNumber[i] = (char) ((y % 2) + '0');
+			i--;
+			y = y / 2;
+		}
+		return bReverseNumber;
 	}
 }
 
