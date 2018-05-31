@@ -1,7 +1,4 @@
-//
-// Created by puzankova 30.05.18
-//
-
+#include <math.h>
 #include "priority_queue.h"
 
 struct Node 
@@ -13,6 +10,9 @@ struct Node
 
 };
 
+int size = 0; // current size of queue
+struct Node *queue = NULL; // it is your queue to work with it
+
 int insert(double value, int key)
 {
 	// return the exit code:
@@ -22,7 +22,16 @@ int insert(double value, int key)
 	
 	// the queue size is 100 elements
 
-	/* YOUR CODE */
+	if (size == 100)
+    {
+        return 1;
+    }
+
+    //TODO: INSERT ELEMENT
+
+    size++;
+    return 0;
+
 }
 
 double extract_min()
@@ -30,6 +39,9 @@ double extract_min()
 	// returns the min value and delete it from queue
 	// if queue is empty returns -infinity and print error message to the screen
 	/* YOUR CODE */
+    if (size == 0)
+    {
+        fprintf(stderr, "Queue is empty\n");
+        return -INFINITY;
+    }
 }
-
-struct Node *queue = NULL; // it is your queue to work with it
