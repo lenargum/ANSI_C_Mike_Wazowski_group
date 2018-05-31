@@ -27,7 +27,51 @@ int insert(double value, int key)
         return 1;
     }
 
-    //TODO: INSERT ELEMENT
+    struct Node *newNode = malloc(sizeof(struct Node));
+
+	newNode->key = key;
+	newNode->value = value;
+	newNode->next = NULL;
+	newNode->prev = NULL;
+
+    if(size == 0)
+    {
+        queue = newNode;
+    }
+    else
+    {
+        struct Node *currentNode = queue;
+        while(currentNode->key <= newNode->key && currentNode->next != NULL)
+        {
+            currentNode = currentNode->next;
+        }
+
+        if (currentNode->key <= newNode->key)
+        {
+            if (currentNode->next != NULL)
+            {
+                currentNode->next->prev = newNode;
+            }
+            newNode->next = currentNode->next;
+            newNode->prev = currentNode;
+            currentNode->next = newNode;
+        }
+        else
+        {
+            if (currentNode->prev != NULL)
+            {
+                currentNode->prev->next = newNode;
+            }
+            else
+            {
+                queue = newNode;
+            }
+            newNode->prev = currentNode->prev;
+            newNode->next = currentNode;
+            currentNode->prev = newNode;
+        }
+
+    }
 
     size++;
     return 0;
@@ -38,10 +82,20 @@ double extract_min()
 {
 	// returns the min value and delete it from queue
 	// if queue is empty returns -infinity and print error message to the screen
-	/* YOUR CODE */
     if (size == 0)
     {
         fprintf(stderr, "Queue is empty\n");
         return -INFINITY;
     }
+
+    struct Node* minNode = queue;
+    double value = minNode->value;
+    queue = minNode->next;
+    if (queue != NULL)
+    {
+        queue->prev = NULL;
+    }
+    free(minNode);
+    size--;
+    return value;
 }
