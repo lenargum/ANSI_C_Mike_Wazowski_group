@@ -6,19 +6,45 @@
 
 START_TEST (test_pop)
 		{
+			push(2.0);
+			push(5.0);
+			push(3.0);
+			ck_assert_double_eq(pop(),3.0);
+			ck_assert_double_eq(pop(),5.0);
+			ck_assert_double_eq(pop(),2.0);
+			ck_assert_double_eq(pop(),-INFINITY);
 		}
 END_TEST
 
 
 START_TEST (test_peek)
 {
-
+	push(2.0);
+	push(5.0);
+	push(3.0);
+	ck_assert_double_eq(pick(),3.0);
+	pop();
+	ck_assert_double_eq(pick(),5.0);
+	pop();
+	ck_assert_double_eq(pick(),2.0);
+	pop();
+	ck_assert_double_eq(pick(),-INFINITY);
 }
 END_TEST
 
 START_TEST (test_push)
 {
+	for(int i = 0; i < 50; i++){		 			//
+		push(i);									// Filling out our Stack
+	}												//
 
+	ck_assert_double_eq(push(4.0),1);				// Test for checking overflow in th stack
+
+	for(int i = 0; i < 50; i++){					//
+		pop();										// Make stack empty
+	}												//
+
+	//ck_assert_double_eq(push(NULL),2); 			can't be to cover by tests
 }
 END_TEST
 
