@@ -40,11 +40,10 @@ START_TEST (test_push)
 
 	ck_assert_double_eq(push(4.0),1);				// Test for checking overflow in th stack
 
-	for(int i = 0; i < 50; i++){					//
+	for(int i = 49; i >= 0; i--){					//
+		ck_assert_double_eq(pick(), i);
 		pop();										// Make stack empty
 	}												//
-
-	//ck_assert_double_eq(push(NULL),2); 			can't be to cover by tests
 }
 END_TEST
 

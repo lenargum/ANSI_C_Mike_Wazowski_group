@@ -1,7 +1,3 @@
-//
-// Created by puzankova 30.05.18
-//
-
 #include "stack.h"
 #include "math.h"
 
@@ -14,7 +10,7 @@ struct Node {
 
 int StackSize = 50;                                                     // Initialization of the stack size
 int curSize = 0;                                                        // Current size of stack (at the beginning
-                                                                        // it's zero)
+// it's zero)
 struct Node *head = NULL;                                               // Pointer to the head element of the stack
 
 int push(double value) {
@@ -25,7 +21,6 @@ int push(double value) {
 
     // the stack size is 50 elements
 
-    /* YOUR CODE */
     struct Node *node = (struct Node *) malloc(sizeof(struct Node));    //Allocating space in the memory for node
 
     if (node == NULL) {
@@ -37,7 +32,7 @@ int push(double value) {
     node->value = value;                                                //
     node->next = head;                                                  //
     node->prev = NULL;                                                  //
-                                                                        // Changing pointers
+    // Changing pointers
     if (head != NULL) {                                                 //
         head->prev = node;                                              //
     }                                                                   //
@@ -51,9 +46,8 @@ int push(double value) {
 double pop() {
     // returns top value and delete it from stack
     // if stack is empty returns -infinity and print error message to the screen
-    /* YOUR CODE */
     if (curSize == 0) {
-        fprintf(stderr, "Stack is empty");
+        fprintf(stderr, "Stack is empty\n");
         return -INFINITY;
     }
 
@@ -71,9 +65,8 @@ double pop() {
 double pick() {
     // just returns the top value
     // if stack is empty returns -infinity and print error message to the screen
-    /* YOUR CODE */
     if (curSize == 0) {
-        fprintf(stderr, "Stack is empty");
+        fprintf(stderr, "Stack is empty\n");
         return -INFINITY;
     }
     return head->value;
