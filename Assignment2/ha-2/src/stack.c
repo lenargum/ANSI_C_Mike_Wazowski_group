@@ -23,6 +23,8 @@ int push(double value) {
 
     struct Node *node = (struct Node *) malloc(sizeof(struct Node));    //Allocating space in the memory for node
 
+
+
     if (node == NULL) {
         return 2;
     }
@@ -36,6 +38,11 @@ int push(double value) {
     if (head != NULL) {                                                 //
         head->prev = node;                                              //
     }                                                                   //
+
+    if (node->value != value)
+    {
+        return 2;
+    }
 
     head = node;                                                        // New pointer to the head of the stack
     curSize++;                                                          // New size of the stack

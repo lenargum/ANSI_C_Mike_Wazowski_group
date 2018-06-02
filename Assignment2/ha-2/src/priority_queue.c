@@ -27,7 +27,12 @@ int insert(double value, int key)
         return 1;
     }
 
-    struct Node *newNode = malloc(sizeof(struct Node));
+    struct Node *newNode = (struct Node *) malloc(sizeof(struct Node));
+
+	if (newNode == NULL)
+    {
+        return 2;
+    }
 
 	newNode->key = key;
 	newNode->value = value;
@@ -71,6 +76,11 @@ int insert(double value, int key)
             currentNode->prev = newNode;
         }
 
+    }
+
+    if (newNode->value != value)
+    {
+        return 2;
     }
 
     size++;
