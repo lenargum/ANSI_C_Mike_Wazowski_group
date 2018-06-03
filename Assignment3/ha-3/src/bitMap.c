@@ -23,12 +23,12 @@ int setBitByNumber(int* array, size_t size, int bit, int position)
         return 2;
     }
 
-    if(position < 1 || position > size)
+    if(position < 0 || position >= size)
     {
         return 3;
     }
 
-    *(array + position - 1) = bit;
+    *(array + position) = bit;
     return 0;
 }
 
@@ -41,12 +41,12 @@ int getBitByNumber(int* array, size_t size, int position)
         return NULL;
     }
 
-    if(position < 1 || position > size)
+    if(position < 0 || position >= size)
     {
         return NULL;
     }
 
-    int value = *(array + position - 1);
+    int value = *(array + position);
 
     if (value != 0 && value != 1)
     {
