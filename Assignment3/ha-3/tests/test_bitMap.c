@@ -4,7 +4,9 @@
 
 START_TEST (test_setBitByNumber)
     {
-        //YOUR CODE HERE
+        int array[3] = {2,-4,8};
+        ck_assert_int_eq(0 ,setBitByNumber(array,3, 1, 0));
+        ck_assert_int_eq(array, 4294953492);
     }
 END_TEST
 
@@ -20,10 +22,11 @@ END_TEST
 
 START_TEST (test_setBitByAddress)
     {
-        int a = 128;
-        int* ptr = binarize_s(a);
-        ck_assert_int_eq(setBitByAddress(ptr, 1), 0);
-        ck_assert_int_eq(binToInt(ptr), -2147483520);
+        int a = -7;
+        int* p = binarize_s(a);
+        setBitByAddress(p,0);
+        ck_assert_int_eq(*p,0);
+        ck_assert_int_eq(binToInt(p), 2147483641);
     }
 END_TEST
 

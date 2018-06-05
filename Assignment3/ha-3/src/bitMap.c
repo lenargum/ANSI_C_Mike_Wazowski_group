@@ -39,7 +39,6 @@ int *binarize_s(const int x) {
         }
         *bNumber = 0;
     }
-    free(endNumber);
     return bNumber;
 }
 
@@ -48,8 +47,8 @@ int binToInt(const int *binNumber) {
         if (binNumber[i] != 0 && binNumber[i] != 1) {
             return NULL;
         }
-        printf("%d ", binNumber[i]);
     }
+
     int result = 0;
 
     int isNegative = 0;
@@ -100,8 +99,6 @@ int setBitByNumber(int *array, size_t size, int bit, int position) {
     int *bElem = binarize_s(*elem);
     *(bElem + position) = bit;
     *elem = binToInt(bElem);
-    free(elem);
-    free(bElem);
     return 0;
 }
 
