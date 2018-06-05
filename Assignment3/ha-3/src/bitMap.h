@@ -13,4 +13,8 @@ int setBitByAddress(void* position, int bit);
 
 int getBitByAddress(void* position);
 
+int *binarize_s(const int x);
+
+int binToInt(const int *binNumber);
+
 #endif //__BITMAP_H_
