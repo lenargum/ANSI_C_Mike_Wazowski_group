@@ -5,6 +5,7 @@
 #include <check.h>
 #include "vector_int.h"
 #include <stdlib.h>
+#include <stdio.h>
 
 #define NELEMS(x) (sizeof (x)/sizeof (x[0]))
 
@@ -13,18 +14,29 @@ int comp_vectors_int(const void *a, const void *b)
 {
 	struct Vector *v1 = (struct Vector *)a;
 	struct Vector *v2 = (struct Vector *)b;
-	/** YOUR CODE HERE */
+	int i = 0;
+	while (v1->size < i + 1 && v2->size < i + 1){
+		if (((int*)v1->data)[i] > ((int*)v2->data)[i]) return 1;
+		if (((int*)v1->data)[i] < ((int*)v2->data)[i]) return -1;
+	}
+	if (v1->size > v2->size) {
+		return 1;
+	}
+	if (v1->size < v2->size) {
+		return -1;
+	}
+	return 0;
 }
 
 START_TEST(test_vector_qsort)
 {
-	struct Vector *v;
+	struct Vector *v = vector_create_int(5);
 	for (int i = 0; i < NELEMS(v); ++i) {
-		/** Initialisation */
+		((int*)v->data)[i] = NELEMS(v) - i;
 	}
 	qsort(&v, NELEMS(v), sizeof v[0], comp_vectors_int);
 	for (int i = 0; i < NELEMS(v); ++i) {
-		/** printf */
+		printf("%d ", ((int*)v->data)[i]);
 	}
 }
 END_TEST

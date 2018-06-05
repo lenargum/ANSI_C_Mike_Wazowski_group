@@ -11,12 +11,7 @@
 /** initial vector capacity */
 static const float GrowthRate = 1.6f; /* geometric growth of vector capacity */
 static const size_t StartSize = 5;
-typedef struct Vector {
-	void *data;
-	size_t capacity;
-	size_t size;
-	size_t itemsize;
-} Vector;
+typedef struct Vector Vector;
 
 /**
 typedef struct Vector {
