@@ -40,26 +40,13 @@ START_TEST(test_vector_pop)
 	}
 END_TEST
 
-START_TEST(test_vector_get_elements)
-	{
-		Vector* vector = vector_create_int(5);
-		for (int i = 0; i < 100; ++i) {
-			vector_push_back_int(vector, i);
-		}
-		ck_assert_int_eq(vector_get_begin_int(vector),0);
-		ck_assert_int_eq(vector_get_end_int(vector),99);
-	}
-END_TEST
-
 Suite* str_suite (void) {
 	Suite *suite = suite_create("Lab Session 4");
 	TCase *tcase = tcase_create("case");
 
-
 	tcase_add_test(tcase, test_vector_create);
 	tcase_add_test(tcase, test_vector_push);
 	tcase_add_test(tcase, test_vector_pop);
-	tcase_add_test(tcase, test_vector_get_elements);
 
 	suite_add_tcase(suite, tcase);
 	return suite;
