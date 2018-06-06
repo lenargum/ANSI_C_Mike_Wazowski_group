@@ -22,8 +22,8 @@ typedef struct Vector {
 } Vector;
  */
 
-Vector *vector_create(size_t capacity, size_t itemsize)
 /** Initialise a vector with the specified capacity for items of size itemsize. */
+Vector *vector_create(size_t capacity, size_t itemsize)
 {
 	Vector *v = (Vector *)malloc(sizeof (Vector));
 	if (v) {
@@ -69,7 +69,7 @@ void vector_pop_back(Vector *v, void *item)
 {
 	assert(v->size > 0);
 	--v->size;
-	memcpy(item, (char*)v->data + v->size * v->itemsize, v->itemsize);
+	memcpy(item, v->data + v->size * v->itemsize, v->itemsize);
 }
 
 /** Return pointer to the element at the specified index. */
@@ -77,7 +77,7 @@ void vector_pop_back(Vector *v, void *item)
 void* vector_get_element(Vector *v, size_t index)
 {
 	assert(index >= 0 && index < v->size);
-	return (char*)v->data + index * v->itemsize;
+	return v->data + index * v->itemsize;
 }
 
 /** Return pointer to beginning of array (ie, to first element of array). */
@@ -89,7 +89,7 @@ void* vector_get_begin(Vector *v)
 /** Return pointer to one-past-end of array. */
 void* vector_get_end(Vector *v)
 {
-	return (char*)v->data + v->size*v->itemsize;
+	return v->data + (v->size - 1)*v->itemsize;
 }
 
 /** Inquire after size of vector item. */

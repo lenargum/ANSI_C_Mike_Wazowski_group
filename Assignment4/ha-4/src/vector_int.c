@@ -23,3 +23,21 @@ int vector_pop_back_int(Vector *v)
 	vector_pop_back(v, &i);
 	return i;
 }
+
+int vector_get_element_int(Vector *v, size_t index)
+{
+	assert(vector_get_item_size(v) == sizeof (int));
+	return *(int*)vector_get_element(v, index);
+}
+
+int vector_get_begin_int(Vector *v)
+{
+	assert(vector_get_item_size(v) == sizeof (int));
+	return *(int*)vector_get_begin(v);
+}
+
+int vector_get_end_int(Vector *v)
+{
+	assert(vector_get_item_size(v) == sizeof (int));
+	return *(int*)vector_get_end(v);
+}
