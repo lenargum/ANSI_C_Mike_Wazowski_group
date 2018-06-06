@@ -59,7 +59,7 @@ int vector_push_back(Vector *v, const void *item)
 	}
 	/* We have enough room. */
 	memcpy((char*)v->data + v->size * v->itemsize, item, v->itemsize);
-	return v->size++;
+	return (int)v->size++;
 }
 
 

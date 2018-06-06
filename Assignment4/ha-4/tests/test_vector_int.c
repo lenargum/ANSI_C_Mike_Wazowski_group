@@ -5,10 +5,17 @@
 #include <check.h>
 #include "vector_int.h"
 #include <stdlib.h>
+#include <stdio.h>
 
 START_TEST(test_vector_create)
 {
-
+	Vector* vector = vector_create_int(5);
+	for (int i = 0; i < 100; ++i) {
+		vector_push_back_int(vector, i);
+	}
+	for (int i = 0; i < 100; ++i) {
+		printf("*%d*\n", ((int*)vector->data)[i]);
+	}
 }
 END_TEST
 

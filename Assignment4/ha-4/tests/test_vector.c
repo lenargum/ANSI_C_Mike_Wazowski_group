@@ -8,7 +8,7 @@
 
 START_TEST(test_vector_create)
 {
-
+    
 }
 END_TEST
 
