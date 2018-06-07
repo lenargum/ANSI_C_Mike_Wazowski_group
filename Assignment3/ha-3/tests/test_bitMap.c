@@ -23,26 +23,22 @@ END_TEST
 START_TEST (test_setBitByAddress)
     {
         int a = -7;
-        int* p = binarize_s(a);
-        setBitByAddress(p,0);
-        ck_assert_int_eq(*p,0);
-        ck_assert_int_eq(binToInt(p), 2147483641);
+        setBitByAddress(&a,0);
+        ck_assert_int_eq(a, 2147483641);
     }
 END_TEST
 
 START_TEST (test_getBitByAddress)
     {
         int a = 128;
-        int* ptr = binarize_s(a);
-        ck_assert_int_eq(0,getBitByAddress(ptr));
-        a *= -1;
-        ptr = binarize_s(a);
-        ck_assert_int_eq(1,getBitByAddress(ptr));
+        ck_assert_int_eq(0,getBitByAddress(&a));
+        a = -128;
+        ck_assert_int_eq(1,getBitByAddress(&a));
     }
 END_TEST
 
 Suite *str_suite(void) {
-    Suite *suite = suite_create("priority queue");
+    Suite *suite = suite_create("Bit map");
     TCase *tcase = tcase_create("case");
     tcase_add_test(tcase, test_setBitByNumber);
     tcase_add_test(tcase, test_getBitByNumber);

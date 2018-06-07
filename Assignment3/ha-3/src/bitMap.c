@@ -136,7 +136,9 @@ int setBitByAddress(void *position, int bit) {
         return 2;
     }
 
-    *(int*)position = bit;
+    int *bElem = binarize_s(*(int*)position);
+    *(bElem) = bit;
+    *(int*)position = binToInt(bElem);
 
     return 0;
 }
@@ -148,7 +150,7 @@ int getBitByAddress(void *position) {
         return NULL;
     }
 
-    int value = *(int *) position;
+    int* bNumber = binarize_s(*(int*)position);
 
-    return value;
+    return *(bNumber);
 }
